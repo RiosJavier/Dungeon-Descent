@@ -1,6 +1,15 @@
-### endless runner
+# **Endless Runner**
 
-
+# Technologies Used
+* ## Unity
+	1. The Unity game development engine provides a powerful and flexible environment for creating this 2D game. We will be incorporating graphics, animation, physics, collisions, audio, and other assets using this technology
+	2. https://unity.com
+* ## C\#
+	1. The primary language that is going to be used in unision with Unity scripting to implement game logic, behaviors, and interactions
+* ## Bitbucket 
+	1. Used for version control, collaborative development and tracking progress throughout development
+* ## Jira Integration
+	1. Jira allows us to organize tasks, track progress. and manage project milestones
 
 # Features
 * ## First Sprint
