@@ -1,5 +1,25 @@
-# **Endless Runner**
+# **Endless Runner** (Temp Name?)
+---
 
+# Description
+
+## Team members
+- [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
+- [Daniel Hamndan]() - orw17@txstate.edu
+- [Paloma Resenndiz]() - prr37@txstate.edu
+- [Javier Rios]() - jer245@txstate.edu
+- [Noe Soto]() - auy2@txstate.edu
+
+## What are we creating?
+
+## Who are we doing this for?
+
+## Why are we doing this
+
+---
+# General Info
+
+---
 # Technologies Used
 * ## Unity
 	1. The Unity game development engine provides a powerful and flexible environment for creating this 2D game. We will be incorporating graphics, animation, physics, collisions, audio, and other assets using this technology
@@ -11,6 +31,7 @@
 * ## Jira Integration
 	1. Jira allows us to organize tasks, track progress. and manage project milestones
 
+---
 # Features
 * ## First Sprint
 	1. Creating a Play-Test Map 
