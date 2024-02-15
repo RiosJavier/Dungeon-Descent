@@ -53,4 +53,4 @@
 
 ---
 ## Acknowledgements
-- [N/A]()
+- [Dr. Ted Lehr]() - ted.lehr@txstate.edu
