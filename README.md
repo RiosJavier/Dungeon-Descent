@@ -17,6 +17,8 @@
 
 ---
 ## General Info
+
+* ### Game Icon
 ![Image Description](https://i.imgur.com/57uF5Nm.jpg)
 
 ---
