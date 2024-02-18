@@ -11,9 +11,9 @@
 
 ---
 ## Description
-> What are we creating?
-> Who are we doing this for?
-> Why are we doing this
+
+Our project targets casual gamers, particularly those who enjoy quick, engaging gameplay experiences. The simplicity of controls and the excitement of endless running challenges make our game suitable for players of all ages and skill levels. Additionally, enthusiasts of the endless runner genre will find familiar mechanics intertwined with fresh elements in our game.
+We aspire to provide an immersive and enjoyable gaming experience that captivates players' attention and offers them a delightful escape from the mundane. Through our project, we aim to ignite a sense of adventure and challenge while fostering moments of joy and achievement. By delivering a high-quality, dynamically generated gaming environment, we seek to redefine the boundaries of the endless runner genre and inspire creativity and innovation in game design.
 
 ---
 ## General Info
