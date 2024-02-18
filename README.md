@@ -17,7 +17,7 @@
 
 ---
 ## General Info
-> Some general info
+![Image Description](https://i.imgur.com/57uF5Nm.jpg)
 
 ---
 ## Technologies Used
