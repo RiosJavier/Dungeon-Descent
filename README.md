@@ -19,7 +19,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 ## General Info
 
 * ### Game Icon
-![Image Description](https://i.imgur.com/57uF5Nm.jpg)
+![Image Description](./Icon.png)
 
 ---
 ## Technologies Used
