@@ -37,13 +37,15 @@
 ## Features
 * ### First Sprint
 	1. Creating a Play-Test Map 
-		- For starters we will first add a grid style map that the player can traverse through. This will not be generated, it will be a play-test area to test new mechanics that we wish to implement. This corresponds to 
-	2. Creating Default Sprites
-		- We will then add temporary placement sprites so to not waste time just drawing/creating designs. The goal of the first sprint is to put in place core mechanics, not asthetics.
+		- For starters we will first add a grid style map that the player can traverse through. This will not be generated, it will be a play-test area to test new mechanics that we wish to implement. This corresponds to User Story 3 (green) and 1 (purple).
+	2. Creating Default Sprites & Menus
+		- We will then add temporary placement sprites so to not waste time just drawing/creating designs. We will then add a menu for people to change the settings of the game, such as volume and controls. The goal of the first sprint is to put in place core mechanics and features, not asthetics, so it will be basic. This corresponds to user story 2 (blue).
 	3. Player Movement
-		- We will add player movement to the game. This will consist of 4 directions, where the player will travel to the adjacent cell depending on the button pressed by the player.
+		- We will add player movement to the game. This will consist of 4 directions, where the player will travel to the adjacent cell depending on the button pressed by the player. This corresponds to user story 1 (purple).
 	4. Collision
-		- We will implement collision handling for whenever the player runs into the wall, collides with enemies, and picks up powerups. This 
+		- We will implement collision handling for whenever the player runs into the wall, collides with enemies, and picks up powerups. This corresponds to user story 3 (green), 1 (purple), and 5 (red). 
+	5. Obstacles & 
+		- We will finally add simple obstacles that the player will have to maneuver around such as spikes. To assist the player, we will also add powerups. The first powerup we will add will be an item that negates all damage for a short period of time. This corresponds with user story 5 (red).
 
 ---
 ## Contacts
