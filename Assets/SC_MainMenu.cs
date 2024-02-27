@@ -7,6 +7,8 @@ public class SC_MainMenu : MonoBehaviour
     public GameObject MainMenu;
     public GameObject CreditsMenu;
     public GameObject SettingsMenu;
+    public GameObject VolumeMenu;
+    public GameObject ControlsMenu;  
 
     // Start is called before the first frame update
     void Start()
@@ -23,24 +25,52 @@ public class SC_MainMenu : MonoBehaviour
     public void CreditsButton()
     {
         // Show Credits Menu
-        MainMenu.SetActive(false);
         CreditsMenu.SetActive(true);
+        MainMenu.SetActive(false);
         SettingsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        Debug.Log("Credits button clicked");
     }
 
     public void SettingsButton()
     {
         MainMenu.SetActive(false);
         CreditsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
         SettingsMenu.SetActive(true);
+        Debug.Log("Settings button clicked");
     }
 
     public void MainMenuButton()
     {
         // Show Main Menu
-        MainMenu.SetActive(true);
         CreditsMenu.SetActive(false);
         SettingsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        MainMenu.SetActive(true);
+        Debug.Log("Main Menu button clicked");
+    }
+    public void VolumeMenuButton()
+    {
+        MainMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
+        SettingsMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        VolumeMenu.SetActive(true);
+        Debug.Log("Volume Menu button clicked");
+    }
+
+    public void ControlsMenuButton()
+    {
+        MainMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
+        SettingsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(true);
+        Debug.Log("Controls Menu button clicked");
     }
 
     public void QuitButton()
