@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - stopMovement
   - 
   - 
   - 
@@ -44,9 +44,9 @@ TagManager:
   - name: Ground Tilemap
     uniqueID: 2077733299
     locked: 0
-  - name: TileMap
-    uniqueID: 2260407585
-    locked: 0
   - name: Player
     uniqueID: 868645225
+    locked: 0
+  - name: TileMap
+    uniqueID: 2260407585
     locked: 0
