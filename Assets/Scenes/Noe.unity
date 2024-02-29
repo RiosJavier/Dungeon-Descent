@@ -218,11 +218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 213509507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6b2d5348e2b4640b62546fb98cdbb9, type: 3}
+  m_Script: {fileID: 11500000, guid: e2d597d377cb74128876da14e0637dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   movePoint: {fileID: 520177781}
+  moveSpeed: 5
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 64
