@@ -62,10 +62,10 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 			- [Scrum-12](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/be34ed4a4a5b2dfca0c522b773ce71fbcd3bddd8/?at=feature%2FSCRUM-12-implement-grid-like-movement)
 		- Jira Task: Integrate collision mechanics with the movement script
-			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
+			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/SCRUM-29-CreateWallCollision/)
 		- Jira Task: Add a jump feature to the player movement
-			- [Scrum-17](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
+			- [Scrum-17](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-17),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/233c266b0a004e3fb5a4d766ac408cabfef3cd0c/?at=feature%2FSCRUM-17-add-a-jump)
 	4. Javier:
 	5. Noe:
