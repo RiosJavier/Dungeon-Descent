@@ -69,6 +69,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/be34ed4a4a5b2dfca0c522b773ce71fbcd3bddd8/?at=feature%2FSCRUM-12-implement-grid-like-movement)
 	4. Javier:
 	5. Noe:
+* ### Next Steps:
 ---
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
