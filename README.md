@@ -46,12 +46,34 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 		- We will implement collision handling for whenever the player runs into the wall, collides with enemies, and picks up powerups. This corresponds to user story 3 (green), 1 (purple), and 5 (red). 
 	5. Obstacles & 
 		- We will finally add simple obstacles that the player will have to maneuver around such as spikes. To assist the player, we will also add powerups. The first powerup we will add will be an item that negates all damage for a short period of time. This corresponds with user story 5 (red).
-
+* ### Contributions
+	1. Mateo:
+	2. Daniel:
+	3. Paloma:
+		- Jira Task: Research how to start developing in Unity
+		- Jira Task: Design player movement controls
+		- Jira Task: Identify input devices and map contorl
+			- [Scrum-10](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-10),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/b846000a7ae136e17e58f4981c2a3ab3081cc058/?at=feature%2FSCRUM-10-identify-input-devices-and-map-)
+		- Jira Task: Write C# script to move the character
+			- [Scrum-11](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-11),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/17f2029ca0b78bc82b2990db0ee087f22b5960fe/?at=feature%2FSCRUM-11-write-a-script-in-c-to-move-the)
+		- Jira Task: Implement grid-like movement
+			- [Scrum-12](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/be34ed4a4a5b2dfca0c522b773ce71fbcd3bddd8/?at=feature%2FSCRUM-12-implement-grid-like-movement)
+		- Jira Task: Integrate collision mechanics with the movement script
+			- [Scrum-8](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/be34ed4a4a5b2dfca0c522b773ce71fbcd3bddd8/?at=feature%2FSCRUM-12-implement-grid-like-movement)
+		- Jira Task: Add a jump feature to the player movement
+			- [Scrum-17](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-12),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/be34ed4a4a5b2dfca0c522b773ce71fbcd3bddd8/?at=feature%2FSCRUM-12-implement-grid-like-movement)
+	4. Javier:
+	5. Noe:
 ---
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
 - [Daniel Hamndan]() - orw17@txstate.edu
-- [Paloma Resenndiz]() - prr37@txstate.edu
+- [Paloma Resendiz]() - prr37@txstate.edu
 - [Javier Rios]() - jer245@txstate.edu
 - [Noe Soto]() - auy2@txstate.edu
 
