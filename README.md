@@ -67,6 +67,14 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/233c266b0a004e3fb5a4d766ac408cabfef3cd0c/?at=feature%2FSCRUM-17-add-a-jump)
 	4. Javier:
 	5. Noe:
+		- Jira Task: Create a grid that makes it to where only objects can move along the grid
+			- [Scrum-37](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-37)
+		- Jira Task: Create a cell (tilemap) that keeps track of the locations of objects on screen to determine collision
+			- [Scrum-39](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-39)
+		- Jira Task: Brainstorm Enemy types and attacks
+			- [Scrum-69](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-69)
+		- Jira Task: Add collision of walls.
+			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29)
 * ### Next Steps:
 ---
 ## Contacts
