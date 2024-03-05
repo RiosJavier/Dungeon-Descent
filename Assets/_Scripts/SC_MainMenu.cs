@@ -10,6 +10,13 @@ public class SC_MainMenu : MonoBehaviour
     public GameObject VolumeMenu;
     public GameObject ControlsMenu;  
 
+    public void QuitButton()
+    {
+        // Quit Game
+        Debug.Log("QUIT");
+        Application.Quit();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,10 +80,5 @@ public class SC_MainMenu : MonoBehaviour
         Debug.Log("Controls Menu button clicked");
     }
 
-    public void QuitButton()
-    {
-        // Quit Game
-        Debug.Log("QUIT");
-        Application.Quit();
-    }
+
 }
