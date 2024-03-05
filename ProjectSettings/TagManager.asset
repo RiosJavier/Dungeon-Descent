@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - stopMovement
+  - WALL
   - 
   - 
   - 
@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 185231295
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground Tilemap
+    uniqueID: 2077733299
+    locked: 0
+  - name: TileMap
+    uniqueID: 2260407585
+    locked: 0
+  - name: WallTileMap
+    uniqueID: 220216429
+    locked: 0
+  - name: DetailTileMap
+    uniqueID: 741175257
+    locked: 0
+  - name: Player
+    uniqueID: 868645225
     locked: 0
