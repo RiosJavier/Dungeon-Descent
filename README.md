@@ -48,6 +48,24 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 		- We will finally add simple obstacles that the player will have to maneuver around such as spikes. To assist the player, we will also add powerups. The first powerup we will add will be an item that negates all damage for a short period of time. This corresponds with user story 5 (red).
 * ### Contributions
 	1. Mateo:
+		- Jira Task: Create a power up that negates all damage
+			- [Scrum-00](),
+    		[Bitbucket]()
+		- Jira Task: Create a spike obstacle that deals damage to the player
+			- [Scrum-00](),
+    		[Bitbucket]()
+		- Jira Task: Create/find backgroud art
+			- [Scrum-81](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-81),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/1cce71da82aa0c250b219039961ad3f162889ca5/?at=feature%2FSCRUM-81-create-find-backgroud-art)
+		- Jira Task: Create/Find basic charecter assets
+			- [Scrum-80](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-80),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/1cce71da82aa0c250b219039961ad3f162889ca5/?at=feature%2FSCRUM-81-create-find-backgroud-art)
+		- Jira Task: Create/find terrain art
+			- [Scrum-85](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-85),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/SCRUM-85-create-find-terrain-art/)
+		- Jira Task: Create a basic class structure for obstacles and power ups. this may
+			- [Scrum-41](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-41),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/SCRUM-41-create-a-basic-class-structure-/)
 	2. Daniel:
 	3. Paloma:
 		- Jira Task: Research how to start developing in Unity
