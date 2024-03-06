@@ -84,6 +84,13 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 			- [Scrum-17](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-17),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/233c266b0a004e3fb5a4d766ac408cabfef3cd0c/?at=feature%2FSCRUM-17-add-a-jump)
 	4. Javier:
+		- Jira Task: Research how to development with Unity
+		- Jira Task: Sketch the initial design of the main menu interface
+			- [Scrum-15](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/8dca0dcf25f27f0d88874cf98daf7cf370bf059b)
+		- Jira Task: Create Menu Options
+			- [Scrum-27](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-27-create-menu-options-develop-int)
+		- Jira Task: Construct a settings submenu
+			- [Scrum-28](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/7dcf41ca7bd0d9aa9c6b3eebaf37e0a308684cd4)
 	5. Noe:
 		- Jira Task: Create a grid that makes it to where only objects can move along the grid
 			- [Scrum-37](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-37)
