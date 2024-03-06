@@ -36,6 +36,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 ---
 ## Features
 * ### First Sprint
+<img src="https://i.imgur.com/cbpdJO1.png" alt="Sprint 1" width="20%" height="20%">
 	1. Creating a Play-Test Map 
 		- For starters we will first add a grid style map that the player can traverse through. This will not be generated, it will be a play-test area to test new mechanics that we wish to implement. This corresponds to User Story 3 (green) and 1 (purple).
 	2. Creating Default Sprites & Menus
@@ -99,7 +100,8 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 		- Jira Task: Brainstorm Enemy types and attacks
 			- [Scrum-69](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-69)
 		- Jira Task: Add collision of walls.
-			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29)
+			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29)			
+
 * ### Next Steps:
 ---
 ## Contacts
