@@ -68,6 +68,11 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 			- [Scrum-41](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-41),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/SCRUM-41-create-a-basic-class-structure-/)
 	2. Daniel:
+		- Jira Task: Research In Unity and C#
+		https://cs3398s24betazoids.atlassian.net/browse/SCRUM-101
+		- Jira Task: Created a Rewards System
+		- Jira Task: Created a Leaderboard management
+		- Jira Task: 
 	3. Paloma:
 		- Jira Task: Research how to start developing in Unity
 		- Jira Task: Design player movement controls
