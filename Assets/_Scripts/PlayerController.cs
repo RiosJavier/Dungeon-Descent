@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Transform movePoint;
+    public bool isJumping = false;
     public LayerMask whatStopsMovement;
     public Vector3 directionFacing = Vector3.zero;
     public Vector3 startPosition;
@@ -36,7 +37,8 @@ public class PlayerController : MonoBehaviour
         }
 
        if (Input.GetKeyDown(KeyCode.Space))
-            StartCoroutine(Jump());
+            if (isJumping == false)
+                StartCoroutine(Jump());
 
         //Debug.Log("Last Movement Direction: " + directionFacing);
     }
@@ -53,6 +55,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Jump()
     {
+        isJumping = true;
+
         Vector3 jumpDestination = startPosition + 3 * directionFacing;
 
         Vector3 jumpDirection = (jumpDestination - startPosition).normalized;
@@ -85,6 +89,8 @@ public class PlayerController : MonoBehaviour
             }
 
             transform.localScale = originalScale;
+            
+            isJumping = false;
         }
     }
 }
