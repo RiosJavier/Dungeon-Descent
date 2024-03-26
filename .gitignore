@@ -61,3 +61,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Ignore recordings made through the Recording plugin in unity
+/Recordings/
