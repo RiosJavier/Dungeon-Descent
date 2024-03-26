@@ -11,11 +11,16 @@ public class PlayerController : MonoBehaviour
     public Vector3 directionFacing = Vector3.zero;
     public Vector3 startPosition;
 
+    Animator animator; // Reference to the Animator component
+
     // Start is called before the first frame update
     void Start()
     {
         movePoint.parent = null;
         startPosition = transform.position;
+        
+        // Get the Animator component attached to the same GameObject
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,6 +55,13 @@ public class PlayerController : MonoBehaviour
             movePoint.position += direction;
             directionFacing = direction;
             startPosition = transform.position;
+
+            // Update the "Direction" parameter in the Animator
+            if (animator != null)
+            {
+                animator.SetFloat("DirectionX", direction.x);
+                animator.SetFloat("DirectionY", direction.y);
+            }
         }
     }
 
