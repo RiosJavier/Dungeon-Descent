@@ -9,12 +9,6 @@ public class ProjectileBehavior : MonoBehaviour
     public LayerMask whatStopsMovement;
     public Transform movePoint;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -29,12 +23,14 @@ public class ProjectileBehavior : MonoBehaviour
     }
 
     // Function to handle collisions with other objects
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the collided object is in the specified collision layer
-        if (whatStopsMovement == (whatStopsMovement | (1 << other.gameObject.layer)))
+        // Log the layer of the collided object for debugging
+        Debug.Log("Collided object layer: " + LayerMask.LayerToName(collision.gameObject.layer));
+
+        if (LayerMask.LayerToName(collision.gameObject.layer) == "WALL")
         {
-            // Destroy the projectile if it collides with an object in the specified layer
+            Debug.Log("COLLISIONS");
             Destroy(gameObject);
         }
     }
