@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     Animator animator; // Reference to the Animator component
 
+    public ProjectileBehavior ProjectilePrefab;
+    public Transform LaunchOffset;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,12 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(Jump());
 
         //Debug.Log("Last Movement Direction: " + directionFacing);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            Debug.Log("Left-Click");
+        }
     }
 
     private void Move(Vector3 direction)
