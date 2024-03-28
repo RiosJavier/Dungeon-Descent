@@ -42,11 +42,12 @@ public class SC_MainMenu : MonoBehaviour
 
     public void SettingsButton()
     {
+        SettingsMenu.SetActive(true);
         MainMenu.SetActive(false);
         CreditsMenu.SetActive(false);
         VolumeMenu.SetActive(false);
         ControlsMenu.SetActive(false);
-        SettingsMenu.SetActive(true);
+
         Debug.Log("Settings button clicked");
     }
 
@@ -80,5 +81,22 @@ public class SC_MainMenu : MonoBehaviour
         Debug.Log("Controls Menu button clicked");
     }
 
+    public void BackButton()
+    {
+        // Here we assume that MainMenu is the default state to return to.
+        // Deactivate all other menus.
+        CreditsMenu.SetActive(false);
+        SettingsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+
+        // Activate the Main Menu.
+        MainMenu.SetActive(true);
+
+        // Log for debugging purposes.
+        Debug.Log("Back to Main Menu");
+        
+    }
+    
 
 }
