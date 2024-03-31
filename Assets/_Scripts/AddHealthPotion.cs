@@ -10,14 +10,11 @@ public class AddHealthPotion : MonoBehaviour
         if(collision.tag == "Player")
         {
             Destroy(gameObject);
+
+            if (HealthTracker.instance != null)
+            {
+                HealthTracker.instance.addHealth();
+            }
         }
-
-        //HealthTracker healthTracker = GetComponent<HealthTracker>();
-
-        if(HealthTracker.instance != null)
-        {
-            HealthTracker.instance.addHealth();
-        }
-
     }
 }
