@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,11 @@ public class HealthTracker : MonoBehaviour
         if (health > numOfHearts)
         {
             health = numOfHearts;
+        }
+
+        if(health <= 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
 
         for (int i = 0; i < hearts.Length; i++)
