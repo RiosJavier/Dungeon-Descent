@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ProjectileBehavior : MonoBehaviour
 {
@@ -9,11 +10,27 @@ public class ProjectileBehavior : MonoBehaviour
     public LayerMask whatStopsMovement;
     public Transform movePoint;
 
+    public float maxDistance = 5f; 
+    private Vector3 initialPosition;
+
+    void Start()
+    {
+        initialPosition = transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {
         // Move the projectile in the specified direction
         transform.Translate(direction * speed * Time.deltaTime);
+
+        float distanceTraveled = Vector3.Distance(initialPosition, transform.position);
+        // Check if the distance traveled exceeds the threshold
+        if (distanceTraveled >= maxDistance)
+        {
+            // If distance exceeds threshold, destroy the GameObject
+            Destroy(gameObject);
+        }
     }
 
     // Function to set the direction of the projectile
