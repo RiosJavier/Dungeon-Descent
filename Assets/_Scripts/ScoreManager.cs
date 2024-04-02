@@ -14,14 +14,34 @@ public class ScoreManager : MonoBehaviour
     private int highscore;
     private List<int> topScores = new List<int>();  // Define the topScores list
 
-    void Start()
-    {
-        score = 0;
-        highscore = 0;
-        scoreText.text = score.ToString() + " POINTS";
-        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+ 
         // Load top scores here if needed
+  void Start()
+    {
+        highscore = PlayerPrefs.GetInt("Highscore", 0); // Load high score from PlayerPrefs
+        score = 0; // Initialize score
+        UpdateUI(); // Update UI to display initial values
     }
+
+ 
+    private void LoadHighscore()
+    {
+        highscore = PlayerPrefs.GetInt("Highscore", 0);
+    }
+
+    private void SaveHighscore()
+    {
+        PlayerPrefs.SetInt("Highscore", highscore);
+    }
+
+     private void UpdateUI()
+    {
+        scoreText.text = "SCORE: " + score.ToString();
+        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+    }
+
+
+
 
     public void Addpoint()
     {
@@ -34,6 +54,13 @@ public class ScoreManager : MonoBehaviour
              PlayerPrefs.SetInt("Highscore", highscore);
             highscoreText.text = "HIGHSCORE: " + highscore.ToString();
          }
+          UpdateUI();
+
+          if (score > highscore)
+        {
+            highscore = score;
+            SaveHighscore();
+        }
 
         // score--;
         // Update top scores list if needed here
