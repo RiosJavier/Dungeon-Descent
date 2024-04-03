@@ -92,5 +92,6 @@ public class QuickMenu : MonoBehaviour
         quickMenu.SetActive(false);
         Time.timeScale = 1f;
     }
+    
 }
 
