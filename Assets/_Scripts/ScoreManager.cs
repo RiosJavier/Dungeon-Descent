@@ -45,7 +45,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Addpoint()
     {
-        score++;
+        score += 5;;
         scoreText.text = score.ToString() + " POINTS";
 
          if (highscore < score)
