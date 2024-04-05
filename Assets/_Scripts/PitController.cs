@@ -5,6 +5,7 @@ using UnityEngine;
 public class PitController : MonoBehaviour
 {
     private bool playerJumpedOver = false;
+    private Vector3 originalScale;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,11 +29,26 @@ public class PitController : MonoBehaviour
         }
         else if (!playerJumpedOver && !player.isJumping)
         {
-            //Player falling into pit animation
-            HealthTracker.instance.decrementHearts();
+            yield return new WaitForSeconds(.2f);
+            ScaleDownPlayer(player);
+            HealthTracker.instance.health = 0;
         }
 
-        yield return new WaitForSeconds(0.2f);
         playerJumpedOver = false;
     }
+
+    private void ScaleDownPlayer(PlayerController player)
+    {
+        float duration = 1f;
+        Vector3 targetScale = new Vector3(0.6f, 0.6f, 1f);
+
+        float elapsedTime = 0f;
+        while (elapsedTime < duration)
+        {
+            player.transform.localScale = Vector3.Lerp(originalScale, targetScale, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+        }
+
+        player.transform.localScale = targetScale;
+    }       
 }

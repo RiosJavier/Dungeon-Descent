@@ -5,17 +5,19 @@ using UnityEngine;
 public class BearTrapController : MonoBehaviour
 {
     private Animator animator;
+    private bool trapTriggered = false;
 
     private void Start()
     {
-        // Get reference to the Animator component
         animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !trapTriggered)
         {
+            trapTriggered = true;
+
             if (HealthTracker.instance != null)
             {
                 HealthTracker.instance.decrementHearts();
