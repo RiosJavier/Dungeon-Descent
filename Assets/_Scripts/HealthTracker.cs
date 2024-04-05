@@ -15,6 +15,8 @@ public class HealthTracker : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    AudioManager audioManager;
+
 
     private void Start()
     {
@@ -61,6 +63,7 @@ public class HealthTracker : MonoBehaviour
     public void decrementHearts()
     {
         health--;
+        audioManager.PlaySFX(audioManager.Damage);
     }
 
     public void addHealth()
@@ -70,6 +73,7 @@ public class HealthTracker : MonoBehaviour
 
     void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         if (instance == null)
         {
             instance = this;
