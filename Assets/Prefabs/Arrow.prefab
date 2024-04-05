@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 760106714, guid: f280307a2fd74b34e88d572d3ef446cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  direction: {x: 0, y: -1}
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 128
   movePoint: {fileID: 5666894138383953242}
+  maxDistance: 5

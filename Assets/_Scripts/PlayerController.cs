@@ -50,11 +50,11 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log("Last Movement Direction: " + directionFacing);
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-            Debug.Log("Left-Click");
-        }
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+        //     Debug.Log("Left-Click");
+        // }
     }
 
     private void Move(Vector3 direction)

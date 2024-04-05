@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6304508129630580893}
   - component: {fileID: 6640627741660282211}
   - component: {fileID: 9007086289744280536}
-  - component: {fileID: 6104524356239222687}
+  - component: {fileID: 1001396457423381714}
+  - component: {fileID: -5848718648783374746}
   m_Layer: 0
   m_Name: Skeleton Archer
   m_TagString: Untagged
@@ -181,7 +182,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &6104524356239222687
+--- !u!114 &1001396457423381714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,6 +191,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8357596489056270893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dddcb622b7b88b42a164a0884819366, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e1f62c9c471e6a44a00d2a42ef93a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5848718648783374746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357596489056270893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea8d924465b3ee42a530a1a2348287d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 4855306131019902165, guid: 87291f51fe62f9747869c76b05d93bba, type: 3}
+  arrowSpawnPoint: {fileID: 2782535470068967583}
+  minInterval: 1
+  maxInterval: 3
