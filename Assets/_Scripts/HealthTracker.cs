@@ -33,7 +33,7 @@ public class HealthTracker : MonoBehaviour
 
         if(health <= 0)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("death");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
 
         for (int i = 0; i < hearts.Length; i++)
