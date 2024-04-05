@@ -18,7 +18,7 @@ public class HealthTracker : MonoBehaviour
 
     private void Start()
     {
-        health = 2;
+        health = 3;
         numOfHearts = 3;
 
     }
