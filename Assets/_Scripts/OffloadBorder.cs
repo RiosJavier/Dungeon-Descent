@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillBorder : MonoBehaviour
+public class OffloadBorder : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+
+        if(collision.tag == "Offloader")
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            Destroy(transform.root.gameObject);
         }
+        
+
         /*else
         {
             Destroy(collision.gameObject);
