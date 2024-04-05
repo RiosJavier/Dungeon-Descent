@@ -21,6 +21,7 @@ public class BearTrapController : MonoBehaviour
             if (HealthTracker.instance != null)
             {
                 HealthTracker.instance.decrementHearts();
+                HealthTracker.instance.decrementHearts();
             }
 
             if (animator != null)

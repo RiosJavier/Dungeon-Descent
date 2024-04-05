@@ -40,7 +40,7 @@ public class PitController : MonoBehaviour
     private void ScaleDownPlayer(PlayerController player)
     {
         float duration = 1f;
-        Vector3 targetScale = new Vector3(0.6f, 0.6f, 1f);
+        Vector3 targetScale = new Vector3(0.5f, 0.5f, 1f);
 
         float elapsedTime = 0f;
         while (elapsedTime < duration)
