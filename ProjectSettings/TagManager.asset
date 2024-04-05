@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - LayoutRoom
   - Offloader
+  - Loader
   layers:
   - Default
   - TransparentFX
