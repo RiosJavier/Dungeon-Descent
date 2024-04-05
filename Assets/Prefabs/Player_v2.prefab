@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 373346976074208495}
   - component: {fileID: 3167721262061255400}
   - component: {fileID: 4567163493289488859}
-  - component: {fileID: 1964501430912822468}
   - component: {fileID: 2162291259317493257}
+  - component: {fileID: 1964501430912822468}
   - component: {fileID: 2410285076139758562}
   m_Layer: 0
   m_Name: Player_v2
@@ -156,28 +156,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &1964501430912822468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052979676154162113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f5a903d4f586a545a68573a170ce3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  movePoint: {fileID: 6710936162479706804}
-  isJumping: 0
-  whatStopsMovement:
-    serializedVersion: 2
-    m_Bits: 128
-  directionFacing: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  ProjectilePrefab: {fileID: 3627471247181899464, guid: 87291f51fe62f9747869c76b05d93bba, type: 3}
-  LaunchOffset: {fileID: 6710936162479706804}
 --- !u!50 &2162291259317493257
 Rigidbody2D:
   serializedVersion: 4
@@ -205,6 +183,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1964501430912822468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052979676154162113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5a903d4f586a545a68573a170ce3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  movePoint: {fileID: 6710936162479706804}
+  isJumping: 0
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 128
+  directionFacing: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  ProjectilePrefab: {fileID: 3627471247181899464, guid: 87291f51fe62f9747869c76b05d93bba, type: 3}
+  LaunchOffset: {fileID: 6710936162479706804}
 --- !u!114 &2410285076139758562
 MonoBehaviour:
   m_ObjectHideFlags: 0

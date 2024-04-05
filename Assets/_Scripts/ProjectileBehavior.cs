@@ -1,12 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class ProjectileBehavior : MonoBehaviour
 {
     public float speed = 5f; // Speed of the projectile
-    public Vector2 direction = Vector2.up; // Initial direction of the projectile
     public LayerMask whatStopsMovement;
     public Transform movePoint;
 
@@ -21,8 +17,8 @@ public class ProjectileBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move the projectile in the specified direction
-        transform.Translate(direction * speed * Time.deltaTime);
+        // Move the projectile in the direction it's facing
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
 
         float distanceTraveled = Vector3.Distance(initialPosition, transform.position);
         // Check if the distance traveled exceeds the threshold
@@ -36,8 +32,13 @@ public class ProjectileBehavior : MonoBehaviour
     // Function to set the direction of the projectile
     public void SetDirection(Vector2 newDirection)
     {
-        direction = newDirection.normalized; // Normalize the direction vector
+        // Determine the angle between the current direction and the new direction
+        float angle = Vector2.SignedAngle(Vector2.down, newDirection);
+
+        // Rotate the sprite to face the new direction
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
+
 
     // Function to handle collisions with other objects
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,5 +51,12 @@ public class ProjectileBehavior : MonoBehaviour
             Debug.Log("COLLISIONS");
             Destroy(gameObject);
         }
+
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("COLLISIONS WITH PLAYER");
+            HealthTracker.instance.decrementHearts();
+            Destroy(gameObject);
+        }        
     }
 }
