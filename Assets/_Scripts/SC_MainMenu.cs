@@ -10,6 +10,8 @@ public class SC_MainMenu : MonoBehaviour
     public GameObject VolumeMenu;
     public GameObject ControlsMenu;  
 
+    public GameObject LeaderBoardMenu;
+
     public void QuitButton()
     {
         // Quit Game
@@ -96,6 +98,19 @@ public class SC_MainMenu : MonoBehaviour
         // Log for debugging purposes.
         Debug.Log("Back to Main Menu");
         
+    }
+    public void LeaderboardButton(){
+        CreditsMenu.SetActive(false);
+        SettingsMenu.SetActive(false);
+        VolumeMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        MainMenu.SetActive(false);
+
+        // Activate the leaderboard.
+        LeaderBoardMenu.SetActive(true);
+
+        // Log for debugging purposes.
+        Debug.Log("Showing Leaderboad now!");
     }
     
 
