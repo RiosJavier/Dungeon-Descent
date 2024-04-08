@@ -1925,6 +1925,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_v2
       objectReference: {fileID: 0}
+    - target: {fileID: 2162291259317493257, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162291259317493257, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2410285076139758562, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
@@ -2386,11 +2394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3059207747284646198, guid: 821dfc73bf73ddb4588528a7749d7c21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.63
+      value: 20.79
       objectReference: {fileID: 0}
     - target: {fileID: 3059207747284646198, guid: 821dfc73bf73ddb4588528a7749d7c21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.43
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 3059207747284646198, guid: 821dfc73bf73ddb4588528a7749d7c21, type: 3}
       propertyPath: m_LocalPosition.z
