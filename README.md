@@ -34,7 +34,8 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 	1. Jira allows us to organize tasks, track progress. and manage project milestones
 
 ---
-## First Sprint
+## Features
+* ### First Sprint
 <img src="https://i.imgur.com/cbpdJO1.png" alt="Sprint 1" width="20%" height="20%">
 	1. Creating a Play-Test Map 
 		- For starters we will first add a grid style map that the player can traverse through. This will not be generated, it will be a play-test area to test new mechanics that we wish to implement. This corresponds to User Story 3 (green) and 1 (purple).
@@ -108,9 +109,11 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29)			
 
 * ### Next Steps:
-	Add obstacles and enemies to the game to make it playable and interesting.
-	
-## Second Sprint
+Add obstacles and enemies to the game to make it playable and interesting.
+
+
+---
+* ### Second Sprint
 * ### Contributions 
 	1. Mateo:
 	2. Daniel:
@@ -140,7 +143,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 	5. Noe: 
 	
 * ### Next Steps:
-	Write next steps for Sprint 3 here
+Write next steps for Sprint 3 here
 ---
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
