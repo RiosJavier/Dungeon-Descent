@@ -208,3 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   changeDirectionInterval: 2
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  tileSize: 1
