@@ -5,7 +5,7 @@ public class RetryButton : MonoBehaviour
 {
     public void OnRetryPressed()
     {
-        SceneManager.LoadScene("MateoEXScene");
+        SceneManager.LoadScene("GameLoop");
     }
 }
 
