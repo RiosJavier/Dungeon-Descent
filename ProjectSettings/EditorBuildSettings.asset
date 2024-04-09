@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MateoEXScene.unity
     guid: 2d476691a77a165478113431296a305a
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 3aadeffd3361f4594a66e66346292c81
+  - enabled: 1
+    path: Assets/Scenes/GameLoop.unity
+    guid: 2d758d92405ae9d4383c662703a268e1
+  - enabled: 1
+    path: Assets/Scenes/death.unity
+    guid: 5421b5aa13beb40718a420c9b9d202b9
   m_configObjects: {}
