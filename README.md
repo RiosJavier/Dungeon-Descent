@@ -34,8 +34,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 	1. Jira allows us to organize tasks, track progress. and manage project milestones
 
 ---
-## Features
-* ### First Sprint
+## First Sprint
 <img src="https://i.imgur.com/cbpdJO1.png" alt="Sprint 1" width="20%" height="20%">
 	1. Creating a Play-Test Map 
 		- For starters we will first add a grid style map that the player can traverse through. This will not be generated, it will be a play-test area to test new mechanics that we wish to implement. This corresponds to User Story 3 (green) and 1 (purple).
@@ -109,6 +108,39 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 			- [Scrum-29](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-29)			
 
 * ### Next Steps:
+	Add obstacles and enemies to the game to make it playable and interesting.
+	
+## Second Sprint
+* ### Contributions 
+	1. Mateo:
+	2. Daniel:
+	3. Paloma:
+		- Jira Task: Add animations to coins
+			- [Scrum-116](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-116), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/5)
+		- Jira Task: Enable player to pick up coins 
+			- [Scrum-114](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-114), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/7)
+		- Jira Task; Implement point system for coins collected
+			- [Scrum-115](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-115), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/21)
+		- Jira Task: Enable a collision event with the player and obstacle
+			- [Scrum-125](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-125), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/16)
+		- Jira Task: Implement health system rules for the obstacle
+			- [Scrum-126](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-126), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/23)
+		- Jira Task: Generate coins throughout the accessible area
+			- [Scrum-113](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-113), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/33)
+		- Jira Task: Generate differrent obstacles throughout the accessible area
+			- [Scrum-124](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-124), 
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/34)
+	4. Javier:
+	5. Noe: 
+	
+* ### Next Steps:
+	Write next steps for Sprint 3 here
 ---
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
