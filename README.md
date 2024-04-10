@@ -113,7 +113,10 @@ Add obstacles and enemies to the game to make it playable and interesting.
 
 
 ---
+## Features
 * ### Second Sprint
+<img src="https://imgur.com/RjEFmHK" alt="Sprint 2" width="20%" height="20%">
+---
 * ### Contributions 
 	1. Mateo:
 	2. Daniel:
