@@ -11,12 +11,9 @@ public class QuickMenu : MonoBehaviour
     private void Start()
     {
         // Ensure the quick menu is not visible at start
-        quickMenu.SetActive(false);
-        
-        // Set volume slider's value to current volume
+        //quickMenu.SetActive(false);
+
         volumeSlider.value = AudioListener.volume;
-        
-        // Add listener for when the value of the Slider changes, to call the function VolumeChange
         volumeSlider.onValueChanged.AddListener(delegate { VolumeChange(); });
     }
 
