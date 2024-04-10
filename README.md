@@ -19,7 +19,7 @@ We aspire to provide an immersive and enjoyable gaming experience that captivate
 ## General Info
 
 * ### Game Icon
-![Image Description](./Icon.png)
+![Image Description](./Images/Icon.png)
 
 ---
 ## Technologies Used
@@ -141,7 +141,30 @@ Add obstacles and enemies to the game to make it playable and interesting.
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/34)
 	4. Javier:
 	5. Noe: 
-	
+		- Jira Task: Deleting objects that go off screen
+			- [Scrum-136](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-136)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/27)
+		- Jira Task: Test that no "impossible" paths get created.
+			- [Scrum-137](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-137)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/28)
+		- Jira Task: Kill the player when they go off screen.
+			- [Scrum-138](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-138)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/26)
+		- Jira Task: When a player's health is zero, add event to end the game.
+			- [Scrum-142](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-142)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/13)
+		- Jira Task: Have the camera move on its own based on a timer.
+			- [Scrum-135](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-135)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/24)
+		- Jira Task: Design UI for Health System
+			- [Scrum-140](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-140)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/2bed30cda5eb3ef06badffa661f3b2a9a0b7fdb4)
+		- Jira Task: Add health when a player collides with an item that gives health.
+			- [Scrum-143](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-143)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/11)
+		- Jira Task: Subtract health when come into contact with enemies + obstacles
+			- [Scrum-141](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-141)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/12)
 * ### Next Steps:
 	- We plan on implementing procedural generation for Sprint 3
 	- Adding sound effects to instances such as when the player picks up a coin, takes damage, or opens the quick menu
