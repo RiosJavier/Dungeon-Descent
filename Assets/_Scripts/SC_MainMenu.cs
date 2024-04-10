@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SC_MainMenu : MonoBehaviour
 {
-    public GameObject MainMenu;
-    public GameObject CreditsMenu;
-    public GameObject SettingsMenu;
-    public GameObject VolumeMenu;
-    public GameObject ControlsMenu;  
+    //public GameObject MainMenu;
+    //public GameObject CreditsMenu;
+    //public GameObject SettingsMenu;
+    //public GameObject VolumeMenu;
+    //public GameObject ControlsMenu;  
 
-    public GameObject LeaderBoardMenu;
+    //public GameObject LeaderBoardMenu;
 
     public void QuitButton()
     {
@@ -20,10 +20,12 @@ public class SC_MainMenu : MonoBehaviour
     }
 
     // Start is called before the first frame update
+    /*
     void Start()
     {
         MainMenuButton();
     }
+    */
 
     public void PlayNowButton()
     {
@@ -31,6 +33,7 @@ public class SC_MainMenu : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameLoop");
     }
 
+    /*
     public void CreditsButton()
     {
         // Show Credits Menu
@@ -112,6 +115,7 @@ public class SC_MainMenu : MonoBehaviour
         // Log for debugging purposes.
         Debug.Log("Showing Leaderboad now!");
     }
+    */
     
 
 }
