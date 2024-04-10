@@ -169,10 +169,17 @@ Add obstacles and enemies to the game to make it playable and interesting.
 			- [Scrum-141](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-141)
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/12)
 * ### Next Steps:
-	- We plan on implementing procedural generation for Sprint 3
-	- Adding sound effects to instances such as when the player picks up a coin, takes damage, or opens the quick menu
+	- Adding power ups into the game that can assist the player
+	- Adding different enemies into the game
+	- Adding more rooms
+	- Possibly adding a fully fleshed out procedural generation feature so we don’t have to make rooms ourselves
+	- Adding cosmetics into the game to reward the player for picking up coins
+	- Adding ways to combat the enemies, such as having a sword
+	- Overall improving the gameplay and feel of the game
+	- Finishing the highscore system and making it save locally into the game
+	- Deploying the game onto a platform for others to play such as itch.io or Steam (computers only is our intention)
 	- Most importantly, we will do tests and fix bugs on the game
-	- Lastly, if we have time, we will add extra features like increasing difficulty, powerups, and character customization
+	- Lastly, if we have time, we will add extra features like increasing difficulty and character customization
 ---
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
