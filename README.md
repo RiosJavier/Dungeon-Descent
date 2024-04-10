@@ -143,6 +143,18 @@ Add obstacles and enemies to the game to make it playable and interesting.
 			- [Scrum-124](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-124), 
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/34)
 	4. Javier:
+		- Jira Task: Find and add SFX music for powerups/items collected.
+			- [Scrum-157](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-157),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/37cb56bee12c91fe22358d576fdc2d90172282af)
+		- Jira Task: When the players dies an end game scene is shown.
+			- [Scrum-154](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-154),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/20)
+		- Jira Task: Find and add background music for the menus/submenus.
+			- [Scrum-156](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-156),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/8)
+		- Jira Task: When esc is hit an in-game settings menu shows.
+			- [Scrum-153](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-153),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/23094f156883b270edca85acca104298a3d88635)
 	5. Noe: 
 		- Jira Task: Deleting objects that go off screen
 			- [Scrum-136](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-136)
@@ -172,7 +184,7 @@ Add obstacles and enemies to the game to make it playable and interesting.
 	- Adding power ups into the game that can assist the player
 	- Adding different enemies into the game
 	- Adding more rooms
-	- Possibly adding a fully fleshed out procedural generation feature so we don’t have to make rooms ourselves
+	- Possibly adding a fully fleshed out procedural generation feature so we donï¿½t have to make rooms ourselves
 	- Adding cosmetics into the game to reward the player for picking up coins
 	- Adding ways to combat the enemies, such as having a sword
 	- Overall improving the gameplay and feel of the game
