@@ -6,15 +6,13 @@ using System.Collections;
 public class QuickMenu : MonoBehaviour
 {
     public GameObject quickMenu; // Assign this to your Quick Menu canvas
-    public Slider volumeSlider; // Assign this to your volume slider
+
 
     private void Start()
     {
         // Ensure the quick menu is not visible at start
         //quickMenu.SetActive(false);
 
-        volumeSlider.value = AudioListener.volume;
-        volumeSlider.onValueChanged.AddListener(delegate { VolumeChange(); });
     }
 
     private void Update()
@@ -68,11 +66,6 @@ public class QuickMenu : MonoBehaviour
     }
     
 
-    public void VolumeChange()
-    {
-        // Adjust the volume based on the slider's value
-        AudioListener.volume = volumeSlider.value;
-    }
 
     public void BackToMainMenu()
     {
