@@ -136,13 +136,13 @@ Add obstacles and enemies to the game to make it playable and interesting.
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-145-an-enemy-type-that-damages-the)
 	2. Daniel: 
 		- Jira Task: Add ScoreBoard to the top left to keep track of collected coins, etc.
-			- [Scrum-129] (https://cs3398s24betazoids.atlassian.net/browse/SCRUM-129)
+			- [Scrum-129](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-129)
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/10)
 		- Jira Task: Create a system to record and manage the player's scores and the dates on which they were achieved. This system should store the data locally on the device.
-			- [Scrum-160] (https://cs3398s24betazoids.atlassian.net/browse/SCRUM-160)
+			- [Scrum-160](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-160)
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/32)
 		- Jira Task: Develop a user interface within the game that displays the high scores and the corresponding dates to the player.
-			- [Scrum-161] (https://cs3398s24betazoids.atlassian.net/browse/SCRUM-161)
+			- [Scrum-161](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-161)
 			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/15)
 	3. Paloma:
 		- Jira Task: Add animations to coins
