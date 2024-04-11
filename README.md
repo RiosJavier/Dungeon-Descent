@@ -119,6 +119,21 @@ Add obstacles and enemies to the game to make it playable and interesting.
 ---
 * ### Contributions 
 	1. Mateo:
+		- Jira Task: A projectile system that can be implemented on top of enemies and other traps
+			- [Scrum-147](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-147),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/src/SCRUM-147-a-projectile-system-that-can-b/)
+		- Jira Task: The enemies that have close quarters combat should movie around or follow and preset path
+			- [Scrum-148](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-148),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-148-the-enemies-that-have-close-qu)
+		- Jira Task: An enemy type that damages the player by firing projectiles
+			- [Scrum-146](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-146),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-146-an-enemy-type-that-damages-the)
+		- Jira Task: The projectile should de-spawn when it goes outside the players view
+			- [Scrum-150](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-150),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-150-the-projectile-should-de-spawn)
+		- Jira Task: An enemy type that damages the player when the player touches it
+			- [Scrum-145](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-145),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-145-an-enemy-type-that-damages-the)
 	2. Daniel:
 	3. Paloma:
 		- Jira Task: Add animations to coins
