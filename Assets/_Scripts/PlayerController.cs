@@ -1,28 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Transform movePoint;
-    public bool isJumping = false;
     public LayerMask whatStopsMovement;
     public Vector3 directionFacing = Vector3.zero;
-    public Vector3 startPosition;
+    public bool isJumping = false;
+    private bool canJumpAgain = false; 
 
-    Animator animator; // Reference to the Animator component
-
-    public ProjectileBehavior ProjectilePrefab;
-    public Transform LaunchOffset;
+    Animator animator; 
 
     // Start is called before the first frame update
     void Start()
     {
         movePoint.parent = null;
-        startPosition = transform.position;
+
         
-        // Get the Animator component attached to the same GameObject
         animator = GetComponent<Animator>();
     }
 
@@ -44,17 +39,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-       if (Input.GetKeyDown(KeyCode.Space))
-            if (isJumping == false)
-                StartCoroutine(Jump());
-
-        //Debug.Log("Last Movement Direction: " + directionFacing);
-
-        // if (Input.GetMouseButtonDown(0))
-        // {
-        //     Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-        //     Debug.Log("Left-Click");
-        // }
+        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        {
+            StartCoroutine(Jump());
+        }
     }
 
     private void Move(Vector3 direction)
@@ -63,9 +51,8 @@ public class PlayerController : MonoBehaviour
         {
             movePoint.position += direction;
             directionFacing = direction;
-            startPosition = transform.position;
 
-            // Update the "Direction" parameter in the Animator
+            
             if (animator != null)
             {
                 animator.SetFloat("DirectionX", direction.x);
@@ -78,14 +65,11 @@ public class PlayerController : MonoBehaviour
     {
         isJumping = true;
 
-        Vector3 jumpDestination = startPosition + 3 * directionFacing;
+        Vector3 jumpDestination = movePoint.position + 2 * directionFacing;
 
-        Vector3 jumpDirection = (jumpDestination - startPosition).normalized;
-        float jumpDistance = Vector3.Distance(startPosition, jumpDestination);
-
-        RaycastHit2D hit = Physics2D.Raycast(startPosition, jumpDirection, jumpDistance, whatStopsMovement);
+        RaycastHit2D hit = Physics2D.Raycast(movePoint.position, directionFacing, 1f, whatStopsMovement);
         if (hit.collider == null)
-        {   
+        {
             float scaleDuration = 0.1f;
             Vector3 originalScale = transform.localScale;
             Vector3 targetScale = originalScale * 1.3f;
