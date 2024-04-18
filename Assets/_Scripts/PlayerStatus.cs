@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,9 @@ public class PlayerStatus : MonoBehaviour
     {
         NONE, ROPE, COIN_MULT, DAMAGE_MULT
     }
+
+    //the transform of the player
+    //public Transform playerTransform;
 
     //Permanent multipliers that can be increased by the shopkeeper
     public int PERMANENT_DAMAGE_MULTIPLIER;
@@ -22,13 +26,11 @@ public class PlayerStatus : MonoBehaviour
     public int damageDebuff;
 
     //Current Item
-    public static Item currentItem;
+    private static Item currentItem;
 
     //time when item was grabbed.
     public int roomNumItemGrabbed;
 
-    //images for all items
-    public List<Image> statusIcons;
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +47,13 @@ public class PlayerStatus : MonoBehaviour
 
         currentItem = Item.NONE;
 
-        ////TEST CODE
-        currentItem = Item.ROPE;
-        ////
+        ////TEST CODE: IF YOU WANT TO TEST YOUR STATUS, JUST CHANGE
+        ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
+        ////EX) currentItem = Item.ROPE;
 
-        setIcon();
+        currentItem = Item.ROPE;
+        
+        //////////////
     }
 
     // Update is called once per frame
@@ -71,33 +75,18 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    void setItem(Item i)
+    public static void setItem(Item i)
     {
         currentItem = i;
-
-        setIcon();
     }
 
-    void setIcon() //set the game icon to indicate what item is equipped.
-    {
-        switch (currentItem)
-        {
-            case Item.ROPE:
-                
-                break;
-            case Item.COIN_MULT:
-                //coin logic
-                break;
-            case Item.DAMAGE_MULT:
-                //damage logic
-                break;
-            case Item.NONE:
-                break;
-        }
-    }
-
-    public static Item getIcon()
+    public static Item getItem()
     {
         return currentItem;
     }
+
+    /*public static void changeLocation(Transform t)
+    {
+        
+    }*/
 }

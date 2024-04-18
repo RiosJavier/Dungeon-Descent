@@ -10,8 +10,7 @@ public class SpriteChooser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("this is being chekced");
-        PlayerStatus.Item i = PlayerStatus.getIcon();
+        PlayerStatus.Item i = PlayerStatus.getItem();
 
         switch (i)
         {
