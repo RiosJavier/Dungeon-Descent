@@ -22,6 +22,9 @@ public class PlayerStatus : MonoBehaviour
     public int tempDamageMult;
     public int tempCoinMult;
 
+    //Num of tempCoinMult currently in use 
+    
+
     //Debuffs
     public int damageDebuff;
     public static bool isInverted;
@@ -54,7 +57,10 @@ public class PlayerStatus : MonoBehaviour
         ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
         ////EX) currentItem = Item.ROPE;
 
-        currentItem = Item.ROPE;
+        currentItem = Item.COIN_MULT;
+        CoinController.tempCoinMultiplierNum++;
+        //Whenever the player is assigned the coin multiplier powerup,
+        //The CoinController.tempCoinMultiplierNum must increase by 1 (this will go in the treasure chest code perhaps)
         
         //////////////
     }
@@ -70,6 +76,12 @@ public class PlayerStatus : MonoBehaviour
                 break;
             case Item.COIN_MULT:
                 //coin logic
+                roomNumItemGrabbed = LoaderBorder.roomCount;
+                if (LoaderBorder.roomCount == roomNumItemGrabbed + 2)
+                {   
+                    CoinController.tempCoinMultiplierNum--; 
+                    currentItem = Item.NONE;
+                }
                 break;
             case Item.DAMAGE_MULT:
                 //damage logic
