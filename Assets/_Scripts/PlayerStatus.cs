@@ -24,7 +24,6 @@ public class PlayerStatus : MonoBehaviour
 
     //Debuffs
     public int damageDebuff;
-    public static bool isInverted;
 
     //Current Item
     private static Item currentItem;
@@ -45,8 +44,6 @@ public class PlayerStatus : MonoBehaviour
         
         tempDamageMult = 1;
         tempCoinMult = 1;
-
-        isInverted = false;
 
         currentItem = Item.NONE;
 
