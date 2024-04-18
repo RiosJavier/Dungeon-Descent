@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatStopsMovement;
     public Vector3 directionFacing = Vector3.zero;
     public bool isJumping = false;
-    private bool canJumpAgain = false; 
+    //private bool canJumpAgain = false; 
 
     Animator animator; 
 

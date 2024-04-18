@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1964501430912822468}
   - component: {fileID: 2410285076139758562}
   - component: {fileID: 3448218807337742999}
+  - component: {fileID: 5609645967487545791}
   m_Layer: 0
   m_Name: Player_v2
   m_TagString: Player
@@ -198,14 +199,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 6710936162479706804}
-  isJumping: 0
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 128
   directionFacing: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  ProjectilePrefab: {fileID: 3627471247181899464, guid: 87291f51fe62f9747869c76b05d93bba, type: 3}
-  LaunchOffset: {fileID: 6710936162479706804}
+  isJumping: 0
 --- !u!114 &2410285076139758562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +238,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   highscoreText: {fileID: 0}
+--- !u!114 &5609645967487545791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052979676154162113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7e1945ff08e7d44b2e7cecb63f5725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 6710936162479706804}
+  PERMANENT_DAMAGE_MULTIPLIER: 0
+  PERMANENT_COIN_MULTIPLIER: 0
+  tempDamageMult: 0
+  tempCoinMult: 0
+  damageDebuff: 0
+  roomNumItemGrabbed: 0
 --- !u!1 &2798503876895295915
 GameObject:
   m_ObjectHideFlags: 0

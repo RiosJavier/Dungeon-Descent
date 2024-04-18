@@ -14,7 +14,25 @@ public class PitController : MonoBehaviour
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                StartCoroutine(CheckPlayerJump(player));
+                if(PlayerStatus.getItem() == PlayerStatus.Item.ROPE)
+                {
+                    //move player and camera back to beginning of the room.
+                    //GetComponent<Transform>();
+                    Transform prefabTransform = transform.parent;
+
+                    
+                    player.transform.position = new Vector3(prefabTransform.position.x - 24.5f, prefabTransform.position.y - .5f);
+                    player.movePoint.position = new Vector3(prefabTransform.position.x - 24.5f, prefabTransform.position.y - .5f);
+
+                    Camera.main.transform.position = new Vector3(prefabTransform.position.x - 24.5f, Camera.main.transform.position.y, Camera.main.transform.position.z);
+
+
+                    PlayerStatus.setItem(PlayerStatus.Item.NONE);
+                }
+                else
+                {
+                    StartCoroutine(CheckPlayerJump(player));
+                }
             }
         }
     }
