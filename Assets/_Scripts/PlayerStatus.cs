@@ -64,21 +64,21 @@ public class PlayerStatus : MonoBehaviour
     void Update()
     {
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
-
-        }
-        switch (currentItem)
-        {
-            case Item.ROPE:
-                //rope logic
-                
-                break;
-            case Item.COIN_MULT:
-                //coin logic
-                break;
-            case Item.DAMAGE_MULT:
-                //damage logic
-                break;
-            //we don't have a "none" check since nothing happens
+            roomNumItemGrabbed = -1;
+            switch (currentItem)
+            {
+                case Item.ROPE:
+                    //rope logic
+                    break;
+                case Item.COIN_MULT:
+                    //coin logic
+                    removeCoinMultiplier();
+                    break;
+                case Item.DAMAGE_MULT:
+                    //damage logic
+                    break;
+                //we don't have a "none" check since nothing happens
+            }
         }
     }
 
@@ -92,8 +92,16 @@ public class PlayerStatus : MonoBehaviour
         return currentItem;
     }
 
-    /*public static void changeLocation(Transform t)
+    private void addCoinMultiplier()
     {
-        
-    }*/
+        tempCoinMult = 2;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+        setItem(Item.COIN_MULT);
+    }
+    private void removeCoinMultiplier()
+    {
+        tempCoinMult = 1;
+
+        setItem(Item.NONE);
+    }
 }
