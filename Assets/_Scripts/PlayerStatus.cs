@@ -85,6 +85,11 @@ public class PlayerStatus : MonoBehaviour
         {
             isInverted = false;
         }
+
+        if (isInverted && roomNumItemGrabbed + 1 == LoaderBorder.roomCount)
+        {
+            isInverted = false;
+        }
     }
 
     public static void setItem(Item i)
