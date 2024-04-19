@@ -91,17 +91,21 @@ public class PlayerStatus : MonoBehaviour
     {
         return currentItem;
     }
-
     private void addCoinMultiplier()
     {
         tempCoinMult = 2;
         roomNumItemGrabbed = LoaderBorder.roomCount;
         setItem(Item.COIN_MULT);
     }
-    private void removeCoinMultiplier()
-    {
+    private void removeCoinMultiplier() { 
         tempCoinMult = 1;
 
         setItem(Item.NONE);
+    }
+
+    private void activateInvertedControls()
+    {
+        isInverted = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
     }
 }
