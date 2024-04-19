@@ -16,11 +16,11 @@ public class PlayerStatus : MonoBehaviour
 
     //Permanent multipliers that can be increased by the shopkeeper
     public int PERMANENT_DAMAGE_MULTIPLIER;
-    public int PERMANENT_COIN_MULTIPLIER;
+    public static int PERMANENT_COIN_MULTIPLIER;
 
     //Temporary Buffs
     public int tempDamageMult;
-    public int tempCoinMult;
+    public static int tempCoinMult;
 
     //Debuffs
     public int damageDebuff;
@@ -41,7 +41,7 @@ public class PlayerStatus : MonoBehaviour
 
         damageDebuff = 0;
 
-        roomNumItemGrabbed = 0;
+        roomNumItemGrabbed = -1;
         
         tempDamageMult = 1;
         tempCoinMult = 1;
@@ -54,7 +54,8 @@ public class PlayerStatus : MonoBehaviour
         ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
         ////EX) currentItem = Item.ROPE;
 
-        currentItem = Item.ROPE;
+        currentItem = Item.COIN_MULT;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
         
         //////////////
     }
@@ -62,19 +63,22 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (currentItem)
-        {
-            case Item.ROPE:
-                //rope logic
-                
-                break;
-            case Item.COIN_MULT:
-                //coin logic
-                break;
-            case Item.DAMAGE_MULT:
-                //damage logic
-                break;
-            //we don't have a "none" check since nothing happens
+        if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
+            roomNumItemGrabbed = -1;
+            switch (currentItem)
+            {
+                case Item.ROPE:
+                    //rope logic
+                    break;
+                case Item.COIN_MULT:
+                    //coin logic
+                    removeCoinMultiplier();
+                    break;
+                case Item.DAMAGE_MULT:
+                    //damage logic
+                    break;
+                //we don't have a "none" check since nothing happens
+            }
         }
     }
 
@@ -88,8 +92,16 @@ public class PlayerStatus : MonoBehaviour
         return currentItem;
     }
 
-    /*public static void changeLocation(Transform t)
+    private void addCoinMultiplier()
     {
-        
-    }*/
+        tempCoinMult = 2;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+        setItem(Item.COIN_MULT);
+    }
+    private void removeCoinMultiplier()
+    {
+        tempCoinMult = 1;
+
+        setItem(Item.NONE);
+    }
 }

@@ -5,6 +5,11 @@ using UnityEngine;
 public class LoaderBorder : MonoBehaviour
 {
     public List<GameObject> prefabList;
+    public static int roomCount;
+
+    void Start(){
+        roomCount = 0;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -13,6 +18,7 @@ public class LoaderBorder : MonoBehaviour
             //Load in next room area.
             Instantiate(prefabList[Random.Range(0, prefabList.Count)], new Vector3(transform.position.x+50,0,0), Quaternion.identity);
             Debug.Log("next room loaded!");
+            roomCount++;
         }
     }
 }
