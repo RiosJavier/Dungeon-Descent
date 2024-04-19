@@ -76,6 +76,11 @@ public class PlayerStatus : MonoBehaviour
                 break;
             //we don't have a "none" check since nothing happens
         }
+
+        if (isInverted && roomNumItemGrabbed + 2 == LoaderBorder.roomCount)
+        {
+            isInverted = false;
+        }
     }
 
     public static void setItem(Item i)
@@ -88,8 +93,9 @@ public class PlayerStatus : MonoBehaviour
         return currentItem;
     }
 
-    /*public static void changeLocation(Transform t)
+    private void activateInvertedControls()
     {
-        
-    }*/
+        isInverted = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
 }
