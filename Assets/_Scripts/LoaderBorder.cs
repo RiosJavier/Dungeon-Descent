@@ -5,7 +5,11 @@ using UnityEngine;
 public class LoaderBorder : MonoBehaviour
 {
     public List<GameObject> prefabList;
-    public static int roomCount = 0;
+    public static int roomCount;
+
+    void Start(){
+        roomCount = 0;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

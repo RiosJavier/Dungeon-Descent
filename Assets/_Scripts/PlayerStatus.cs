@@ -16,14 +16,11 @@ public class PlayerStatus : MonoBehaviour
 
     //Permanent multipliers that can be increased by the shopkeeper
     public int PERMANENT_DAMAGE_MULTIPLIER;
-    public int PERMANENT_COIN_MULTIPLIER;
+    public static int PERMANENT_COIN_MULTIPLIER;
 
     //Temporary Buffs
     public int tempDamageMult;
-    public int tempCoinMult;
-
-    //Num of tempCoinMult currently in use 
-    
+    public static int tempCoinMult;
 
     //Debuffs
     public int damageDebuff;
@@ -44,7 +41,7 @@ public class PlayerStatus : MonoBehaviour
 
         damageDebuff = 0;
 
-        roomNumItemGrabbed = 0;
+        roomNumItemGrabbed = -1;
         
         tempDamageMult = 1;
         tempCoinMult = 1;
@@ -58,9 +55,7 @@ public class PlayerStatus : MonoBehaviour
         ////EX) currentItem = Item.ROPE;
 
         currentItem = Item.COIN_MULT;
-        CoinController.tempCoinMultiplierNum++;
-        //Whenever the player is assigned the coin multiplier powerup,
-        //The CoinController.tempCoinMultiplierNum must increase by 1 (this will go in the treasure chest code perhaps)
+        roomNumItemGrabbed = LoaderBorder.roomCount;
         
         //////////////
     }
@@ -68,6 +63,9 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
+
+        }
         switch (currentItem)
         {
             case Item.ROPE:
@@ -76,12 +74,6 @@ public class PlayerStatus : MonoBehaviour
                 break;
             case Item.COIN_MULT:
                 //coin logic
-                roomNumItemGrabbed = LoaderBorder.roomCount;
-                if (LoaderBorder.roomCount == roomNumItemGrabbed + 2)
-                {   
-                    CoinController.tempCoinMultiplierNum--; 
-                    currentItem = Item.NONE;
-                }
                 break;
             case Item.DAMAGE_MULT:
                 //damage logic

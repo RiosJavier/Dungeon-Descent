@@ -27,7 +27,7 @@ public class CoinController : MonoBehaviour
                 {
                      if (ScoreManager.instance != null)
                     {   
-                        int multiplierNum = originalValue * tempCoinMultiplierNum * permanentCoinMultiplierNum;
+                        int multiplierNum = originalValue * PlayerStatus.tempCoinMult * PlayerStatus.PERMANENT_COIN_MULTIPLIER;
                         for (int i = 0; i < multiplierNum; i++)
                         {
                             ScoreManager.instance.Addpoint();

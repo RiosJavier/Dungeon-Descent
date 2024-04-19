@@ -12,15 +12,6 @@ public class SpriteChooser : MonoBehaviour
     {
         PlayerStatus.Item i = PlayerStatus.getItem();
 
-        switch (i)
-        {
-            case PlayerStatus.Item.ROPE:
-                sp.GetComponent<SpriteRenderer>().sprite = sprites[(int)i];
-                break;
-            case PlayerStatus.Item.NONE:
-                sp.GetComponent<SpriteRenderer>().sprite = sprites[(int)i];
-                break;
-
-        }
+        sp.GetComponent<SpriteRenderer>().sprite = sprites[(int)i];
     }
 }
