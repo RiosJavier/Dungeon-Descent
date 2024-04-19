@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 3883326142831982935}
   - component: {fileID: 7578175231482792840}
   - component: {fileID: 5261612785276481221}
-  - component: {fileID: 4982578411232137677}
   m_Layer: 0
   m_Name: Loader
-  m_TagString: Untagged
+  m_TagString: Loader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,38 +425,6 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 2569184639476554947}
---- !u!114 &4982578411232137677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2569184639476554947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d3f6272567d60a4aad452fd9151cfd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabList:
-  - {fileID: 3536442211509121812, guid: 7b737a986b936464091bc03450287bae, type: 3}
-  - {fileID: 3536442211509121812, guid: b181edfebd28c4543978934f5458ae6a, type: 3}
-  - {fileID: 3536442211509121812, guid: 7ef391a2dd8dc954f95a36134209f4ac, type: 3}
-  - {fileID: 3536442211509121812, guid: bcef930a6d03a2a418d18d16dde3d441, type: 3}
-  - {fileID: 3536442211509121812, guid: 531cafb8f064b91478680bbd6411150e, type: 3}
-  - {fileID: 3536442211509121812, guid: 862162fb7926743d39e7e648c0b97e43, type: 3}
-  - {fileID: 3536442211509121812, guid: f5d563a80039e4b9cbe27e17096b3d71, type: 3}
-  - {fileID: 3536442211509121812, guid: c1e8616142ff94efab5a18e71f7557cd, type: 3}
-  - {fileID: 3536442211509121812, guid: 78ed55c12e41f4202b89d78750f2644f, type: 3}
-  - {fileID: 3536442211509121812}
-  - {fileID: 3536442211509121812, guid: 56fb58f325ab848b784e4dc388decf3c, type: 3}
-  - {fileID: 3536442211509121812, guid: b9f626be1301b4cb4b0e828bfbd2bcc2, type: 3}
-  - {fileID: 3536442211509121812, guid: ba6c3e7d6c23d42cb98310ea897bc954, type: 3}
-  - {fileID: 3536442211509121812, guid: 033ce82e076594c6d832cf4bd91f85e4, type: 3}
-  - {fileID: 3536442211509121812, guid: 77ca8c367e30f4962abe6eb9fadd39b2, type: 3}
-  - {fileID: 3536442211509121812, guid: b63b0d7f714620b4e88db2cb20725ac3, type: 3}
-  - {fileID: 3536442211509121812, guid: 963240078aa5ad247867c3fdd0c22cff, type: 3}
-  - {fileID: 3536442211509121812, guid: 85335dc167c77524fbc43ff0642a46d7, type: 3}
-  - {fileID: 3536442211509121812, guid: 3860e0be2e55d1c40acc0add49038d45, type: 3}
 --- !u!1 &3536442211509121812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,10 +1760,6 @@ CompositeCollider2D:
       - {x: -5.999971, y: 1}
       - {x: -3, y: 0.9999706}
       - {x: -2.999971, y: -3}
-    - - {x: 10.99997, y: 1}
-      - {x: 10.99997, y: 2}
-      - {x: 5, y: 1.9999708}
-      - {x: 5.000029, y: 1}
     - - {x: 14.999971, y: -4}
       - {x: 15.000071, y: 0.1873935}
       - {x: 15.125014, y: 0}
@@ -1816,6 +1779,10 @@ CompositeCollider2D:
       - {x: 20.999971, y: 2}
       - {x: 14, y: 1.9999708}
       - {x: 14.000029, y: -4}
+    - - {x: 10.99997, y: 1}
+      - {x: 10.99997, y: 2}
+      - {x: 5, y: 1.9999708}
+      - {x: 5.000029, y: 1}
     - - {x: 20, y: 0.43761012}
       - {x: 19.56257, y: 1}
       - {x: 20, y: 0.9999706}
