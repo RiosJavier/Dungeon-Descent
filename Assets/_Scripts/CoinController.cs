@@ -6,8 +6,6 @@ public class CoinController : MonoBehaviour
 {
     AudioManager audioManager;
     public static int originalValue = 1;
-    public static int tempCoinMultiplierNum = 1;
-    public static int permanentCoinMultiplierNum = 1;
     
     private void Awake()
     {
@@ -28,6 +26,8 @@ public class CoinController : MonoBehaviour
                      if (ScoreManager.instance != null)
                     {   
                         int multiplierNum = originalValue * PlayerStatus.tempCoinMult * PlayerStatus.PERMANENT_COIN_MULTIPLIER;
+                        PlayerStatus.addCoin();
+
                         for (int i = 0; i < multiplierNum; i++)
                         {
                             ScoreManager.instance.Addpoint();

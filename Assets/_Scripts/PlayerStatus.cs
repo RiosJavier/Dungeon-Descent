@@ -8,8 +8,11 @@ public class PlayerStatus : MonoBehaviour
 {
     public enum Item
     {
-        NONE, ROPE, COIN_MULT, DAMAGE_MULT
+        NONE, ROPE, COIN_MULT, DAMAGE_MULT, INSTAKILL, NO_DAMAGE, LIMITED_SIGHT
     }
+
+    public static int NUMBER_OF_BUFFS = 3;
+    public static int NUMBER_OF_DEBUFFS = 3;
 
     //the transform of the player
     //public Transform playerTransform;
@@ -30,8 +33,11 @@ public class PlayerStatus : MonoBehaviour
     private static Item currentItem;
 
     //time when item was grabbed.
-    public int roomNumItemGrabbed;
+    private static int roomNumItemGrabbed;
 
+
+    //number of coins the player has
+    public static int coinCount;
 
     // Start is called before the first frame update
     void Start()
@@ -50,12 +56,16 @@ public class PlayerStatus : MonoBehaviour
 
         currentItem = Item.NONE;
 
+        coinCount = 0;
+
         ////TEST CODE: IF YOU WANT TO TEST YOUR STATUS, JUST CHANGE
         ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
         ////EX) currentItem = Item.ROPE;
 
-        currentItem = Item.COIN_MULT;
-        roomNumItemGrabbed = LoaderBorder.roomCount;
+        //currentItem = Item.COIN_MULT;
+        //roomNumItemGrabbed = LoaderBorder.roomCount;
+        //tempCoinMult = 2;
+        coinCount = 10;
         
         //////////////
     }
@@ -95,21 +105,25 @@ public class PlayerStatus : MonoBehaviour
     public static void setItem(Item i)
     {
         currentItem = i;
+        if(currentItem != Item.NONE)
+        {
+            roomNumItemGrabbed = LoaderBorder.roomCount;
+        }
     }
 
     public static Item getItem()
     {
         return currentItem;
     }
-    private void addCoinMultiplier()
+/*    private void addCoinMultiplier()
     {
         tempCoinMult = 2;
         roomNumItemGrabbed = LoaderBorder.roomCount;
         setItem(Item.COIN_MULT);
-    }
+    }*/
+
     private void removeCoinMultiplier() { 
         tempCoinMult = 1;
-
         setItem(Item.NONE);
     }
 
@@ -117,5 +131,16 @@ public class PlayerStatus : MonoBehaviour
     {
         isInverted = true;
         roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    public static void addCoin()
+    {
+        coinCount += 1 * PERMANENT_COIN_MULTIPLIER * tempCoinMult;
+        Debug.Log("coin Count == " + coinCount);
+    }
+
+    public static void subtractCoins()
+    {
+
     }
 }
