@@ -44,7 +44,7 @@ public class ProjectileBehavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Log the layer of the collided object for debugging
-        Debug.Log("Collided object layer: " + LayerMask.LayerToName(collision.gameObject.layer));
+        //Debug.Log("Collided object layer: " + LayerMask.LayerToName(collision.gameObject.layer));
 
         if (LayerMask.LayerToName(collision.gameObject.layer) == "WALL")
         {
