@@ -158,12 +158,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9f294d488b5ca4a8f1519a3b7681d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 11358e37d1383f744900cc10dc321535, type: 3}
+  - {fileID: 1606491681, guid: 608c1bd2602b44969b2d4ca2c9f77e22, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   chestUI: {fileID: 2126003136642934245}
   lucky: {fileID: 5612004600184791169}
   unlucky: {fileID: 3472784374592323666}
   luckyPercent: {fileID: 8304684598643908102}
   unluckyPercent: {fileID: 6048374049256871817}
   currentCoins: {fileID: 9016950849564270205}
+  luckyItem: {fileID: 32452322543416089}
+  unluckyItem: {fileID: 1443492049464869486}
 --- !u!1001 &3528860505611499118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,6 +286,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e2ca0f6942c9184192548040dd85537, type: 3}
+--- !u!114 &32452322543416089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3497692558848869751, guid: 8e2ca0f6942c9184192548040dd85537, type: 3}
+  m_PrefabInstance: {fileID: 3528860505611499118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4510013637819720627 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1040277005629232605, guid: 8e2ca0f6942c9184192548040dd85537, type: 3}
@@ -295,6 +315,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4966425934837713907}
     m_Modifications:
+    - target: {fileID: 3477478532962998935, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4169006661731449141}
+    - target: {fileID: 4801131958120147382, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4169006661731449141}
     - target: {fileID: 5220804925590365024, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -375,6 +403,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5804668918196932370, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4169006661731449141}
     - target: {fileID: 6603776280099692164, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
       propertyPath: m_Name
       value: CHESTUI
@@ -383,6 +415,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7992289193963212121, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4169006661731449141}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -518,6 +554,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31f4145d64f689d4faf2357c64e8898d, type: 3}
+--- !u!114 &1443492049464869486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8499276027441215584, guid: 31f4145d64f689d4faf2357c64e8898d, type: 3}
+  m_PrefabInstance: {fileID: 7060288358761904654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1479250675565230701 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8465769475894296675, guid: 31f4145d64f689d4faf2357c64e8898d, type: 3}

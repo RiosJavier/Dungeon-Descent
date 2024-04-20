@@ -8,6 +8,8 @@ using TMPro;
 
 public class chestMenu : MonoBehaviour
 {
+    public List<Sprite> sprites;
+
     public GameObject chestUI;
     public GameObject lucky;
     public GameObject unlucky;
@@ -15,6 +17,9 @@ public class chestMenu : MonoBehaviour
     public GameObject luckyPercent;
     public GameObject unluckyPercent;
     public GameObject currentCoins;
+
+    public Image luckyItem;
+    public Image unluckyItem;
 
     private int luckPercent;
     private int coinsSpent;
@@ -25,7 +30,6 @@ public class chestMenu : MonoBehaviour
         chestUI.SetActive(false);
         lucky.SetActive(false);
         unlucky.SetActive(false);
-
         luckPercent = 0;
         coinsSpent = 0;
         currentCoins.GetComponent<TextMeshProUGUI>().text = "0";
@@ -101,9 +105,10 @@ public class chestMenu : MonoBehaviour
 
     private void pickGoodBuff()
     {
-        int roll = Random.Range(1, PlayerStatus.NUMBER_OF_BUFFS);
+        int roll = Random.Range(1, PlayerStatus.NUMBER_OF_BUFFS + 1);
 
         PlayerStatus.setItem((PlayerStatus.Item)roll);
+        luckyItem.sprite = sprites[roll];
 
         lucky.SetActive(true);
         chestUI.SetActive(false);
@@ -111,7 +116,7 @@ public class chestMenu : MonoBehaviour
 
     private void pickBadBuff()
     {
-        int roll = Random.Range(PlayerStatus.NUMBER_OF_BUFFS + 1, PlayerStatus.NUMBER_OF_BUFFS + PlayerStatus.NUMBER_OF_DEBUFFS);
+        int roll = Random.Range(PlayerStatus.NUMBER_OF_BUFFS + 1, PlayerStatus.NUMBER_OF_BUFFS + PlayerStatus.NUMBER_OF_DEBUFFS + 1);
 
         PlayerStatus.setItem((PlayerStatus.Item)roll);
 

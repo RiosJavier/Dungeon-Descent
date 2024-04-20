@@ -11,7 +11,7 @@ public class SpriteChooser : MonoBehaviour
     void Update()
     {
         PlayerStatus.Item i = PlayerStatus.getItem();
-
         sp.GetComponent<SpriteRenderer>().sprite = sprites[(int)i];
+        //chestMenu.currentSprite = sp;
     }
 }

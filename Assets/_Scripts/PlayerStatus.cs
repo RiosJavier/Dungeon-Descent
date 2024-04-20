@@ -62,9 +62,9 @@ public class PlayerStatus : MonoBehaviour
         ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
         ////EX) currentItem = Item.ROPE;
 
-        currentItem = Item.COIN_MULT;
-        roomNumItemGrabbed = LoaderBorder.roomCount;
-        tempCoinMult = 2;
+        //currentItem = Item.COIN_MULT;
+        //roomNumItemGrabbed = LoaderBorder.roomCount;
+        //tempCoinMult = 2;
         coinCount = 10;
         
         //////////////
