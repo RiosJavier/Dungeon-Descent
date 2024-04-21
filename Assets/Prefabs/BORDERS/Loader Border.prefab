@@ -928,6 +928,7 @@ MonoBehaviour:
   - {fileID: 3536442211509121812, guid: 963240078aa5ad247867c3fdd0c22cff, type: 3}
   - {fileID: 3536442211509121812, guid: 85335dc167c77524fbc43ff0642a46d7, type: 3}
   - {fileID: 3536442211509121812, guid: 3860e0be2e55d1c40acc0add49038d45, type: 3}
+  shopkeeperRoom: {fileID: 3536442211509121812, guid: befc3f616ac939c44a1058c58e076620, type: 3}
 --- !u!1 &3647679857406880360
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ public class PermaHeartScript : MonoBehaviour
 
     public void generatePrice()
     {
-        price = Random.Range(100, 201);
+        price = Random.Range(80 + 20*LoaderBorder.shopkeeperCount, 201 + 20*LoaderBorder.shopkeeperCount);
     }
 
     public void setText()
