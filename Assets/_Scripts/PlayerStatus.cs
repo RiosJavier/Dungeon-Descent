@@ -74,7 +74,7 @@ public class PlayerStatus : MonoBehaviour
         ////"setItem(Item...) TO BE WHAT YOU WANT TO TEST!!
         ////EX) setItem(Item.ROPE);
         
-        coinCount = 10;
+        coinCount = 300;
         
 
         //////////////
