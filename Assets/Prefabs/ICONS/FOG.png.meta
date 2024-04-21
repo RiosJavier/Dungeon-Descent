@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cc82b758d9a954c4896fe163d00871ca
+guid: 5a69ec1a1102d4490997af4fa569da9d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fog_png_transparent_8_by_agusrockforlife_ddwgbm7-fullview_0
+      name: FOG_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 507
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f585ee0a20e84049ab90f805e0f0d9f
-      internalID: -1303751060
+      spriteID: 59016d5eca4fc48c280c66650d6e2b78
+      internalID: 826387087
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fog_png_transparent_8_by_agusrockforlife_ddwgbm7-fullview_0: -1303751060
+      FOG_0: 826387087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
