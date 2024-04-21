@@ -1,15 +1,18 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    //public float smoothnessFactor = 100f;
     public Transform movePoint;
     public LayerMask whatStopsMovement;
     public Vector3 directionFacing = Vector3.zero;
     public bool isJumping = false;
 
     Animator animator; 
+    public VisualEffect vfx;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        vfx.SetVector3("CollisionPos", transform.position + new Vector3(13f, 0f, 0f));
+        //vfx.SetVector3("CollisionPos", Vector3.Lerp(vfx.GetVector3("CollisionPos"), transform.position, Time.deltaTime * smoothnessFactor));
         bool isInverted = PlayerStatus.isInverted;
 
         if (!isInverted)

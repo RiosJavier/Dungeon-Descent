@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class PlayerStatus : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlayerStatus : MonoBehaviour
     }
 
     public static int NUMBER_OF_BUFFS = 5;
-    public static int NUMBER_OF_DEBUFFS = 3;
+    public static int NUMBER_OF_DEBUFFS = 4;
 
     //the transform of the player
     //public Transform playerTransform;
@@ -33,6 +34,7 @@ public class PlayerStatus : MonoBehaviour
 
     //Debuffs
     public int damageDebuff;
+    public static bool isLimitedSight;
     public static bool isInverted;
 
     //Current Item
@@ -48,6 +50,9 @@ public class PlayerStatus : MonoBehaviour
     public static int coinCount;
     public Text coinText;
 
+    //Fog Visual effect
+    public VisualEffect vfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +67,7 @@ public class PlayerStatus : MonoBehaviour
         tempDamageMult = 1;
         tempCoinMult = 1;
 
+        isLimitedSight = true;
         isInverted = false;
 
         setItem(Item.NONE);
@@ -83,6 +89,10 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Update the fog visual effect
+        vfx.enabled = isLimitedSight;
+
+        // powerup logic
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
             roomNumItemGrabbed = -1;
             switch (currentItem)
@@ -106,14 +116,27 @@ public class PlayerStatus : MonoBehaviour
             }
         }
 
-        if (isInverted && roomNumItemGrabbed + 1 == LoaderBorder.roomCount)
-        {
-            isInverted = false;
-        }
+        // debuff logic
+        if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 1 == LoaderBorder.roomCount){
+            roomNumItemGrabbed = -1;
+            switch (currentItem)
+            {
+                case Item.INSTAKILL:
+                    //instakill logic
+                    break;
+                case Item.NO_DAMAGE:
+                    //no damage logic
 
-        if (isInverted && roomNumItemGrabbed + 1 == LoaderBorder.roomCount)
-        {
-            isInverted = false;
+                    break;
+                case Item.LIMITED_SIGHT:
+                    //limited sight logic
+                    isLimitedSight = false;
+                    break;
+                case Item.INV_CONTROLS:
+                    //inverted controls logic
+                    isInverted = false;
+                    break;
+            }
         }
 
         updateCoin();
@@ -154,6 +177,7 @@ public class PlayerStatus : MonoBehaviour
         setItem(Item.NONE);
     }
 
+<<<<<<<
     private static void addInvincible()
     {
         isInvincible = true;
@@ -172,6 +196,9 @@ public class PlayerStatus : MonoBehaviour
         roomNumItemGrabbed = LoaderBorder.roomCount;
     }
 
+=======
+
+>>>>>>>
     public static void addCoin()
     {
         coinCount += 1 * PERMANENT_COIN_MULTIPLIER * tempCoinMult;
@@ -188,10 +215,5 @@ public class PlayerStatus : MonoBehaviour
         //Debug.Log("Coins: " + coinCount.ToString());
         coinText.text = "COINS: " + coinCount.ToString();
     }
-
-    public static void addShield()
     {
-        HealthTracker.shield++;
-        setItem(Item.NONE);
-    }
 }
