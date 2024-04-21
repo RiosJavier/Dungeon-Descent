@@ -101,6 +101,8 @@ public class chestMenu : MonoBehaviour
         {
             pickBadBuff();
         }
+
+        PlayerStatus.subtractCoins(coinsSpent);
     }
 
     private void pickGoodBuff()

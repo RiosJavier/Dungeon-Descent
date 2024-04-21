@@ -8,10 +8,14 @@ public class PlayerStatus : MonoBehaviour
 {
     public enum Item
     {
-        NONE, ROPE, COIN_MULT, DAMAGE_MULT, INSTAKILL, NO_DAMAGE, LIMITED_SIGHT
+        NONE, 
+        
+        ROPE, COIN_MULT, DAMAGE_MULT, INVINCIBLE, //BUFFS
+        
+        INSTAKILL, NO_DAMAGE, LIMITED_SIGHT //DEBUFFS
     }
 
-    public static int NUMBER_OF_BUFFS = 3;
+    public static int NUMBER_OF_BUFFS = 4;
     public static int NUMBER_OF_DEBUFFS = 3;
 
     //the transform of the player
@@ -35,9 +39,12 @@ public class PlayerStatus : MonoBehaviour
     //time when item was grabbed.
     private static int roomNumItemGrabbed;
 
+    //invincible boolean
+    public static bool isInvincible;
 
     //number of coins the player has
     public static int coinCount;
+    public Text coinText;
 
     // Start is called before the first frame update
     void Start()
@@ -58,10 +65,13 @@ public class PlayerStatus : MonoBehaviour
 
         coinCount = 0;
 
+        isInvincible = false;
+
         ////TEST CODE: IF YOU WANT TO TEST YOUR STATUS, JUST CHANGE
         ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
         ////EX) currentItem = Item.ROPE;
 
+        setItem(Item.INVINCIBLE);
         //currentItem = Item.COIN_MULT;
         //roomNumItemGrabbed = LoaderBorder.roomCount;
         //tempCoinMult = 2;
@@ -87,6 +97,8 @@ public class PlayerStatus : MonoBehaviour
                 case Item.DAMAGE_MULT:
                     //damage logic
                     break;
+                case Item.INVINCIBLE:
+                    removeInvincible(); break;
                 //we don't have a "none" check since nothing happens
             }
         }
@@ -100,14 +112,24 @@ public class PlayerStatus : MonoBehaviour
         {
             isInverted = false;
         }
+
+        updateCoin();
     }
 
     public static void setItem(Item i)
     {
         currentItem = i;
-        if(currentItem != Item.NONE)
+
+        switch (currentItem)
         {
-            roomNumItemGrabbed = LoaderBorder.roomCount;
+            case Item.NONE:
+                roomNumItemGrabbed = LoaderBorder.roomCount; break;
+            case Item.ROPE:
+                break;
+            case Item.COIN_MULT:
+                addCoinMultiplier(); break;
+            case Item.INVINCIBLE:
+                addInvincible(); break;
         }
     }
 
@@ -115,15 +137,27 @@ public class PlayerStatus : MonoBehaviour
     {
         return currentItem;
     }
-/*    private void addCoinMultiplier()
+
+    private static void addCoinMultiplier()
     {
         tempCoinMult = 2;
         roomNumItemGrabbed = LoaderBorder.roomCount;
-        setItem(Item.COIN_MULT);
-    }*/
+    }
 
     private void removeCoinMultiplier() { 
         tempCoinMult = 1;
+        setItem(Item.NONE);
+    }
+
+    private static void addInvincible()
+    {
+        isInvincible = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    private static void removeInvincible()
+    {
+        isInvincible = false;
         setItem(Item.NONE);
     }
 
@@ -139,8 +173,14 @@ public class PlayerStatus : MonoBehaviour
         Debug.Log("coin Count == " + coinCount);
     }
 
-    public static void subtractCoins()
+    public static void subtractCoins(int coinsSpent)
     {
+        coinCount -= coinsSpent;
+    }
 
+    public void updateCoin()
+    {
+        //Debug.Log("Coins: " + coinCount.ToString());
+        coinText.text = "COINS: " + coinCount.ToString();
     }
 }

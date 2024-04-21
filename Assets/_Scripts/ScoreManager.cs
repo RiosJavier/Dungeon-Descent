@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.SetInt("Highscore", highscore);
     }
 
-     private void UpdateUI()
+     public void UpdateUI()
     {
         scoreText.text = "SCORE: " + score.ToString();
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();

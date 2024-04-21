@@ -8,6 +8,7 @@ public class LoaderBorder : MonoBehaviour
     public static int roomCount;
 
     void Start(){
+        Debug.Log("room count set to 0");
         roomCount = 0;
     }
     private void OnTriggerEnter2D(Collider2D collision)
