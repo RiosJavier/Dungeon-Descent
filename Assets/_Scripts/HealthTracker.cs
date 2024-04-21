@@ -40,7 +40,7 @@ public class HealthTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health > numOfHearts)
+        if (health > numOfHearts + PlayerStatus.PERMANENT_HEALTH_BOOST)
         {
             health = numOfHearts;
         }
