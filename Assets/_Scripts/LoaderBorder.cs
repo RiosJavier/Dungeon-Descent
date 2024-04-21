@@ -17,6 +17,7 @@ public class LoaderBorder : MonoBehaviour
 
         if (collision.tag == "Loader")
         {
+            collision.tag = "already touched";
             //Load in next room area.
             Instantiate(prefabList[Random.Range(0, prefabList.Count)], new Vector3(transform.position.x+39,0,0), Quaternion.identity);
             Debug.Log("next room loaded!");

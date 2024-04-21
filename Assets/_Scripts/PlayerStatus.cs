@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,20 +11,21 @@ public class PlayerStatus : MonoBehaviour
     {
         NONE, 
         
-        ROPE, COIN_MULT, DAMAGE_MULT, INVINCIBLE, //BUFFS
+        ROPE, COIN_MULT, DAMAGE_MULT, INVINCIBLE, SHIELD, //BUFFS
         
         INSTAKILL, NO_DAMAGE, LIMITED_SIGHT //DEBUFFS
     }
 
-    public static int NUMBER_OF_BUFFS = 4;
+    public static int NUMBER_OF_BUFFS = 5;
     public static int NUMBER_OF_DEBUFFS = 3;
 
     //the transform of the player
     //public Transform playerTransform;
 
     //Permanent multipliers that can be increased by the shopkeeper
-    public int PERMANENT_DAMAGE_MULTIPLIER;
+    public static int PERMANENT_DAMAGE_MULTIPLIER;
     public static int PERMANENT_COIN_MULTIPLIER;
+    public static int PERMANENT_HEALTH_BOOST;
 
     //Temporary Buffs
     public int tempDamageMult;
@@ -51,6 +53,7 @@ public class PlayerStatus : MonoBehaviour
     {
         PERMANENT_DAMAGE_MULTIPLIER = 1;
         PERMANENT_COIN_MULTIPLIER = 1;
+        PERMANENT_HEALTH_BOOST = 0; //BECAUSE NO HEARTS
 
         damageDebuff = 0;
 
@@ -61,22 +64,19 @@ public class PlayerStatus : MonoBehaviour
 
         isInverted = false;
 
-        currentItem = Item.NONE;
+        setItem(Item.NONE);
 
         coinCount = 0;
 
         isInvincible = false;
 
-        ////TEST CODE: IF YOU WANT TO TEST YOUR STATUS, JUST CHANGE
-        ////"currentItem" TO BE WHAT YOU WANT TO TEST!!!
-        ////EX) currentItem = Item.ROPE;
-
-        setItem(Item.INVINCIBLE);
-        //currentItem = Item.COIN_MULT;
-        //roomNumItemGrabbed = LoaderBorder.roomCount;
-        //tempCoinMult = 2;
+        ////TEST CODE: IF YOU WANT TO TEST YOUR STATUS, JUST CALL
+        ////"setItem(Item...) TO BE WHAT YOU WANT TO TEST!!
+        ////EX) setItem(Item.ROPE);
+        
         coinCount = 10;
         
+
         //////////////
     }
 
@@ -99,6 +99,9 @@ public class PlayerStatus : MonoBehaviour
                     break;
                 case Item.INVINCIBLE:
                     removeInvincible(); break;
+                default: 
+                    //things that should go to default are items such as rope or shield.
+                    break;
                 //we don't have a "none" check since nothing happens
             }
         }
@@ -123,13 +126,15 @@ public class PlayerStatus : MonoBehaviour
         switch (currentItem)
         {
             case Item.NONE:
-                roomNumItemGrabbed = LoaderBorder.roomCount; break;
+                roomNumItemGrabbed = -1; break;
             case Item.ROPE:
                 break;
             case Item.COIN_MULT:
                 addCoinMultiplier(); break;
             case Item.INVINCIBLE:
                 addInvincible(); break;
+            case Item.SHIELD:
+                addShield(); break;
         }
     }
 
@@ -182,5 +187,11 @@ public class PlayerStatus : MonoBehaviour
     {
         //Debug.Log("Coins: " + coinCount.ToString());
         coinText.text = "COINS: " + coinCount.ToString();
+    }
+
+    public static void addShield()
+    {
+        HealthTracker.shield++;
+        setItem(Item.NONE);
     }
 }

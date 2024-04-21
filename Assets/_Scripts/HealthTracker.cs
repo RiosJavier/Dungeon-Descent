@@ -12,13 +12,19 @@ public class HealthTracker : MonoBehaviour
     public int health;
     public int numOfHearts;
 
-    public int shield;
+    public static int shield;
     public int numOfShields;
 
-    public Image[] hearts;
-    public Image[] sheilds;
-    public Sprite fullHeart;
-    public Sprite emptyHeart;
+    public GameObject[] hearts;
+    public GameObject[] shields; 
+    
+    public Sprite fullHeart; //red heart
+    public Sprite emptyHeart; //gray heart
+    public Sprite missingHeart; //invisible
+
+    public Sprite fullShield; //blue shield
+    public Sprite emptyShield; //no shield
+
     AudioManager audioManager;
 
 
@@ -27,7 +33,7 @@ public class HealthTracker : MonoBehaviour
         health = 3;
         numOfHearts = 3;
 
-        shield = 0;
+        shield = 1;
         numOfShields = 3;
     }
 
@@ -39,6 +45,11 @@ public class HealthTracker : MonoBehaviour
             health = numOfHearts;
         }
 
+        if (shield > numOfShields)
+        {
+            shield = numOfShields;
+        }
+
         if(health <= 0)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("death");
@@ -48,20 +59,31 @@ public class HealthTracker : MonoBehaviour
         {
             if (i < health)
             {
-                hearts[i].sprite = fullHeart;
+                hearts[i].GetComponent<SpriteRenderer>().sprite = fullHeart;
             }
             else
             {
-                hearts[i].sprite = emptyHeart;
+                if(i < numOfHearts + PlayerStatus.PERMANENT_HEALTH_BOOST)
+                {
+                    hearts[i].GetComponent<SpriteRenderer>().sprite = emptyHeart;
+                }
+                else
+                {
+                    hearts[i].GetComponent<SpriteRenderer>().sprite = missingHeart;
+                }
+                
             }
+        }
 
-            if (i < numOfHearts)
+        for(int i = 0; i < shields.Length; i++)
+        {
+            if(i < shield)
             {
-                hearts[i].enabled = true;
+                shields[i].GetComponent<SpriteRenderer>().sprite = fullShield;
             }
             else
             {
-                hearts[i].enabled = false;
+                shields[i].GetComponent<SpriteRenderer>().sprite = emptyShield;
             }
         }
     }

@@ -108,7 +108,7 @@ public class chestMenu : MonoBehaviour
     private void pickGoodBuff()
     {
         int roll = Random.Range(1, PlayerStatus.NUMBER_OF_BUFFS + 1);
-
+        Debug.Log("ROLL == " + roll);
         PlayerStatus.setItem((PlayerStatus.Item)roll);
         luckyItem.sprite = sprites[roll];
 
