@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class PlayerStatus : MonoBehaviour
 {
@@ -49,6 +50,9 @@ public class PlayerStatus : MonoBehaviour
     public static int coinCount;
     public Text coinText;
 
+    //Fog Visual effect
+    public VisualEffect vfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +89,9 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Update the fog visual effect
+        vfx.enabled = isLimitedSight;
+
         // powerup logic
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
             roomNumItemGrabbed = -1;

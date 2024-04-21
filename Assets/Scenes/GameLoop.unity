@@ -2416,11 +2416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quickMenu: {fileID: 1177647487}
---- !u!1 &1177910517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5116664639313082698, guid: 144969976d4ca2f4ea39dec4cb33341a, type: 3}
-  m_PrefabInstance: {fileID: 1600970796}
-  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1194253622
 --- !u!1001 &1201094244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2429,6 +2425,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1964501430912822468, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
+      propertyPath: vfx
+      value: 
+      objectReference: {fileID: 1194253625}
     - target: {fileID: 1964501430912822468, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
       propertyPath: moveSpeed
       value: 5
@@ -2646,9 +2646,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 43577658}
     - target: {fileID: 5609645967487545791, guid: 15be98ba01bb52a44928abf49a417827, type: 3}
-      propertyPath: coinText
+      propertyPath: vfx
       value: 
-      objectReference: {fileID: 1701509278}
+      objectReference: {fileID: 1194253625}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3273,6 +3273,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701509276}
   m_CullTransparentMesh: 1
+--- !u!1 &1644581340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1891154850954202182, guid: 3192f6d4ca5049e4888bf966fcbfe389, type: 3}
+  m_PrefabInstance: {fileID: 1396515511972779276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1703812900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4006,11 +4011,50 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7871598877856660324, guid: 3192f6d4ca5049e4888bf966fcbfe389, type: 3}
   m_PrefabInstance: {fileID: 1396515511972779276}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2081543291 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3056416045482536656, guid: 144969976d4ca2f4ea39dec4cb33341a, type: 3}
-  m_PrefabInstance: {fileID: 1600970796}
+--- !u!114 &2055328309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644581340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &2086831120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,7 +4462,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1891154850954202182, guid: 3192f6d4ca5049e4888bf966fcbfe389, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055328309}
   m_SourcePrefab: {fileID: 100100000, guid: 3192f6d4ca5049e4888bf966fcbfe389, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
