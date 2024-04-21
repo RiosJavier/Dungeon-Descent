@@ -67,7 +67,7 @@ public class PlayerStatus : MonoBehaviour
         tempDamageMult = 1;
         tempCoinMult = 1;
 
-        isLimitedSight = true;
+        isLimitedSight = false;
         isInverted = false;
 
         setItem(Item.NONE);
@@ -91,6 +91,7 @@ public class PlayerStatus : MonoBehaviour
     {
         //Update the fog visual effect
         vfx.enabled = isLimitedSight;
+        Debug.Log("isLimitedSight: " + isLimitedSight);
 
         // powerup logic
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
