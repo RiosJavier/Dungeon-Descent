@@ -9,7 +9,7 @@ public class TextMovement : MonoBehaviour
     public float zoomInScale = 1.5f; // The scale to zoom in to
     public float zoomOutScale = 1.0f; // The original scale to zoom out to
     public float zoomDuration = 1.5f; // Duration of the zoom in/out
-    public float delayBetweenZooms = .2f; // Delay between zoom in and zoom out
+    public float delayBetweenZooms = .5f; // Delay between zoom in and zoom out
 
     void Start()
     {

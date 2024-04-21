@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2307886}
   - component: {fileID: 2307887}
+  - component: {fileID: 2307888}
   m_Layer: 5
   m_Name: ControlsMenu
   m_TagString: Untagged
@@ -172,6 +173,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2307888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2307885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61070425509ce4e4dbe5aa3919bf0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.8
+  targetScale: {x: 1, y: 1, z: 1}
+  openEaseType: 16
+  closeEaseType: 26
+  menuToDeactivate: {fileID: 0}
+  menuToActivate: {fileID: 1145266696}
 --- !u!1 &25962098
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,10 +478,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 89901886}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 89901889}
+        m_TargetAssemblyTypeName: MenuAnimator, Assembly-CSharp
+        m_MethodName: CloseAndDeactivate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -471,18 +490,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1153110704}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &39140322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,6 +709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60524929}
   - component: {fileID: 60524930}
+  - component: {fileID: 60524931}
   m_Layer: 5
   m_Name: VolumeMenu
   m_TagString: Untagged
@@ -741,6 +749,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &60524931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60524928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61070425509ce4e4dbe5aa3919bf0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.8
+  targetScale: {x: 1, y: 1, z: 1}
+  openEaseType: 16
+  closeEaseType: 26
+  menuToDeactivate: {fileID: 0}
+  menuToActivate: {fileID: 1145266696}
 --- !u!1 &89901886
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89901887}
   - component: {fileID: 89901888}
+  - component: {fileID: 89901889}
   m_Layer: 5
   m_Name: CreditsMenu
   m_TagString: Untagged
@@ -790,6 +817,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &89901889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89901886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61070425509ce4e4dbe5aa3919bf0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.8
+  targetScale: {x: 1, y: 1, z: 1}
+  openEaseType: 16
+  closeEaseType: 26
+  menuToDeactivate: {fileID: 0}
+  menuToActivate: {fileID: 1153110704}
 --- !u!1 &102945717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,22 +2732,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1153110704}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
-      - m_Target: {fileID: 1145266696}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1145266699}
+        m_TargetAssemblyTypeName: SettingsMenuAnimator, Assembly-CSharp
+        m_MethodName: CloseAndDeactivate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2710,7 +2743,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &436788495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4567,7 +4600,7 @@ MonoBehaviour:
   zoomInScale: 1.5
   zoomOutScale: 1
   zoomDuration: 1.5
-  delayBetweenZooms: 0.2
+  delayBetweenZooms: 0.5
 --- !u!1 &1127959343
 GameObject:
   m_ObjectHideFlags: 0
@@ -4697,6 +4730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145266697}
   - component: {fileID: 1145266698}
+  - component: {fileID: 1145266699}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: MainCamera
@@ -4736,6 +4770,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1145266699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145266696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ab7ce1973b849f59e534cf417fae0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.8
+  targetScale: {x: 1, y: 1, z: 1}
+  mainMenu: {fileID: 1153110704}
 --- !u!1 &1153110704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4747,6 +4796,7 @@ GameObject:
   - component: {fileID: 1153110705}
   - component: {fileID: 1153110706}
   - component: {fileID: 1153110707}
+  - component: {fileID: 1153110708}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -4807,7 +4857,25 @@ MonoBehaviour:
   zoomInScale: 1.5
   zoomOutScale: 1
   zoomDuration: 1.5
-  delayBetweenZooms: 1
+  delayBetweenZooms: 0.2
+--- !u!114 &1153110708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153110704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61070425509ce4e4dbe5aa3919bf0dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 0.8
+  targetScale: {x: 1, y: 1, z: 1}
+  openEaseType: 16
+  closeEaseType: 26
+  menuToDeactivate: {fileID: 0}
+  menuToActivate: {fileID: 1153110704}
 --- !u!1 &1158463458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,10 +5319,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1145266696}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2307888}
+        m_TargetAssemblyTypeName: MenuAnimator, Assembly-CSharp
+        m_MethodName: CloseAndDeactivate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5263,18 +5331,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
-      - m_Target: {fileID: 2307885}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1255598757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5410,10 +5466,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1145266696}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 60524931}
+        m_TargetAssemblyTypeName: MenuAnimator, Assembly-CSharp
+        m_MethodName: CloseAndDeactivate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5422,18 +5478,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
-      - m_Target: {fileID: 60524928}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1270361395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5691,7 +5735,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1319727879
 MonoBehaviour:
   m_ObjectHideFlags: 0
