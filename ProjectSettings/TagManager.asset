@@ -10,6 +10,8 @@ TagManager:
   - Offloader
   - Loader
   - already touched
+  - Freezer
+  - Continue
   layers:
   - Default
   - TransparentFX
