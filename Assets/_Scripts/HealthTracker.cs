@@ -12,7 +12,11 @@ public class HealthTracker : MonoBehaviour
     public int health;
     public int numOfHearts;
 
+    public int shield;
+    public int numOfShields;
+
     public Image[] hearts;
+    public Image[] sheilds;
     public Sprite fullHeart;
     public Sprite emptyHeart;
     AudioManager audioManager;
@@ -23,6 +27,8 @@ public class HealthTracker : MonoBehaviour
         health = 3;
         numOfHearts = 3;
 
+        shield = 0;
+        numOfShields = 3;
     }
 
     // Update is called once per frame
@@ -62,13 +68,29 @@ public class HealthTracker : MonoBehaviour
 
     public void decrementHearts()
     {
-        health--;
+        if(!PlayerStatus.isInvincible)
+        {
+            if(shield > 0)
+            {
+                shield--;
+            }
+            else
+            {
+                health--;
+            }
+        }
+        
         audioManager.PlaySFX(audioManager.Damage);
     }
 
     public void addHealth()
     {
         health++;
+    }
+
+    public void addShield()
+    {
+        shield++;
     }
 
     void Awake()

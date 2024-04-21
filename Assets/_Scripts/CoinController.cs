@@ -18,6 +18,8 @@ public class CoinController : MonoBehaviour
             audioManager.PlaySFX(audioManager.Coin);
             Destroy(gameObject);
 
+            PlayerStatus.addCoin();
+
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
@@ -26,7 +28,6 @@ public class CoinController : MonoBehaviour
                      if (ScoreManager.instance != null)
                     {   
                         int multiplierNum = originalValue * PlayerStatus.tempCoinMult * PlayerStatus.PERMANENT_COIN_MULTIPLIER;
-                        PlayerStatus.addCoin();
 
                         for (int i = 0; i < multiplierNum; i++)
                         {

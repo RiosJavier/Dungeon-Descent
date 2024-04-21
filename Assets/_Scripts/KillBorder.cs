@@ -8,7 +8,7 @@ public class KillBorder : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("death");
         }
         /*else
         {
