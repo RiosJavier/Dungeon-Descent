@@ -14,7 +14,7 @@ public class PlayerStatus : MonoBehaviour
         
         ROPE, COIN_MULT, DAMAGE_MULT, INVINCIBLE, SHIELD, //BUFFS
         
-        INSTAKILL, NO_DAMAGE, LIMITED_SIGHT //DEBUFFS
+        INSTAKILL, NO_DAMAGE, LIMITED_SIGHT, INV_CONTROLS //DEBUFFS
     }
 
     public static int NUMBER_OF_BUFFS = 5;
@@ -177,7 +177,6 @@ public class PlayerStatus : MonoBehaviour
         setItem(Item.NONE);
     }
 
-<<<<<<<
     private static void addInvincible()
     {
         isInvincible = true;
@@ -196,9 +195,6 @@ public class PlayerStatus : MonoBehaviour
         roomNumItemGrabbed = LoaderBorder.roomCount;
     }
 
-=======
-
->>>>>>>
     public static void addCoin()
     {
         coinCount += 1 * PERMANENT_COIN_MULTIPLIER * tempCoinMult;
@@ -210,10 +206,15 @@ public class PlayerStatus : MonoBehaviour
         coinCount -= coinsSpent;
     }
 
+    public static void addShield()
+    {   
+        //Add shield logic
+        roomNumItemGrabbed = LoaderBorder.roomCount;   
+    }
+
     public void updateCoin()
     {
         //Debug.Log("Coins: " + coinCount.ToString());
         coinText.text = "COINS: " + coinCount.ToString();
     }
-    {
 }
