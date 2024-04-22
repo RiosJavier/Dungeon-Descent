@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 608c1bd2602b44969b2d4ca2c9f77e22
+guid: 21995e41dd3984fd0b5bd0b2fcd1bbed
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: COIN_MULT
+      name: NO_DAMAGE
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 150
-        height: 150
+        width: 512
+        height: 504
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c488cc13a548145c6ad3f84b9686a2c1
-      internalID: 1606491681
+      spriteID: ce17a936be1f1408e9d215c93595ba2d
+      internalID: -1574556574
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      COIN_MULT: 1606491681
+      NO_DAMAGE: -1574556574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
