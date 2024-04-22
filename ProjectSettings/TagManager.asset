@@ -12,6 +12,7 @@ TagManager:
   - already touched
   - Freezer
   - Continue
+  - Sword
   layers:
   - Default
   - TransparentFX

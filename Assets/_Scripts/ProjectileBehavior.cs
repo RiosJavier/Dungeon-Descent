@@ -48,7 +48,7 @@ public class ProjectileBehavior : MonoBehaviour
 
         if (LayerMask.LayerToName(collision.gameObject.layer) == "WALL")
         {
-            Debug.Log("COLLISIONS");
+            //Debug.Log("COLLISIONS");
             Destroy(gameObject);
         }
 

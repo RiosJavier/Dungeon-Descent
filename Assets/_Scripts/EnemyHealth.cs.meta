@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1863834e09b028d4eb57f8d062d0dcf1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fullHeart: {instanceID: 0}
+  - emptyHeart: {instanceID: 0}
+  - deathPanel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
