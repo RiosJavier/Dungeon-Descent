@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9007086289744280536}
   - component: {fileID: 1001396457423381714}
   - component: {fileID: -5848718648783374746}
+  - component: {fileID: 5217082620683609191}
   m_Layer: 0
   m_Name: Skeleton Archer
   m_TagString: Untagged
@@ -210,3 +211,16 @@ MonoBehaviour:
   arrowSpawnPoint: {fileID: 2782535470068967583}
   minInterval: 1
   maxInterval: 3
+--- !u!114 &5217082620683609191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357596489056270893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1863834e09b028d4eb57f8d062d0dcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1

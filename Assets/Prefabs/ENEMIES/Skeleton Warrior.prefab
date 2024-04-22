@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2970442762026648415}
   - component: {fileID: 3485597394312649676}
   - component: {fileID: 3641282624005031121}
+  - component: {fileID: -9200868547253794847}
   m_Layer: 0
   m_Name: Skeleton Warrior
   m_TagString: Untagged
@@ -212,3 +213,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   tileSize: 1
+--- !u!114 &-9200868547253794847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5074722270558482318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1863834e09b028d4eb57f8d062d0dcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1

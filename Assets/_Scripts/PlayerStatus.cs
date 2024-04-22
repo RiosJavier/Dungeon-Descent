@@ -51,7 +51,7 @@ public class PlayerStatus : MonoBehaviour
     public Text coinText;
 
     //Fog Visual effect
-    public VisualEffect vfx;
+    //public VisualEffect vfx;
 
     // Start is called before the first frame update
     void Start()
@@ -90,8 +90,8 @@ public class PlayerStatus : MonoBehaviour
     void Update()
     {
         //Update the fog visual effect
-        vfx.enabled = isLimitedSight;
-        Debug.Log("isLimitedSight: " + isLimitedSight);
+        //vfx.enabled = isLimitedSight;
+//        Debug.Log("isLimitedSight: " + isLimitedSight);
 
         // powerup logic
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
