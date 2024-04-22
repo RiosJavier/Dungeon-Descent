@@ -33,6 +33,7 @@ public class PlayerStatus : MonoBehaviour
     public static int tempCoinMult;
 
     //Debuffs
+    public static bool isInstakill;
     public int damageDebuff;
     public static bool isLimitedSight;
     public static bool isInverted;
@@ -50,8 +51,6 @@ public class PlayerStatus : MonoBehaviour
     public static int coinCount;
     public Text coinText;
 
-    //Fog Visual effect
-    //public VisualEffect vfx;
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +66,7 @@ public class PlayerStatus : MonoBehaviour
         tempDamageMult = 1;
         tempCoinMult = 1;
 
+        isInstakill = false;
         isLimitedSight = false;
         isInverted = false;
 
@@ -89,10 +89,6 @@ public class PlayerStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Update the fog visual effect
-        //vfx.enabled = isLimitedSight;
-//        Debug.Log("isLimitedSight: " + isLimitedSight);
-
         // powerup logic
         if(roomNumItemGrabbed != -1 && roomNumItemGrabbed + 2 == LoaderBorder.roomCount){
             roomNumItemGrabbed = -1;
@@ -124,6 +120,7 @@ public class PlayerStatus : MonoBehaviour
             {
                 case Item.INSTAKILL:
                     //instakill logic
+                    removeInstaKill();
                     break;
                 case Item.NO_DAMAGE:
                     //no damage logic
@@ -131,11 +128,11 @@ public class PlayerStatus : MonoBehaviour
                     break;
                 case Item.LIMITED_SIGHT:
                     //limited sight logic
-                    isLimitedSight = false;
+                    removeLimitedSight();
                     break;
                 case Item.INV_CONTROLS:
                     //inverted controls logic
-                    isInverted = false;
+                    removeInvertedControls();
                     break;
             }
         }
@@ -159,6 +156,14 @@ public class PlayerStatus : MonoBehaviour
                 addInvincible(); break;
             case Item.SHIELD:
                 addShield(); break;
+            case Item.INSTAKILL:
+                addInstaKill(); break;
+            case Item.NO_DAMAGE:
+                break;
+            case Item.LIMITED_SIGHT:
+                addLimitedSight(); break;
+            case Item.INV_CONTROLS:
+                addInvertedControls(); break;
         }
     }
 
@@ -190,10 +195,39 @@ public class PlayerStatus : MonoBehaviour
         setItem(Item.NONE);
     }
 
-    private void activateInvertedControls()
+    private static void addInstaKill()
+    {
+        isInstakill = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    private void removeInstaKill()
+    {
+        isInstakill = false;
+        setItem(Item.NONE);
+    }
+
+    private static void addLimitedSight()
+    {
+        isLimitedSight = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    private void removeLimitedSight()
+    {
+        isLimitedSight = false;
+        setItem(Item.NONE);
+    }
+    private static void addInvertedControls()
     {
         isInverted = true;
         roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    private void removeInvertedControls()
+    {
+        isInverted = false;
+        setItem(Item.NONE);
     }
 
     public static void addCoin()

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a69ec1a1102d4490997af4fa569da9d
+guid: d801812635d3841f7a48039bc27133c7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FOG_0
+      name: LIMITED_SIGHT
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 200
+        width: 1208
+        height: 1280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59016d5eca4fc48c280c66650d6e2b78
-      internalID: 826387087
+      spriteID: 0274c29f44a20422ea5937b6dafdbb00
+      internalID: -1798736801
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FOG_0: 826387087
+      LIMITED_SIGHT: -1798736801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

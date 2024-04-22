@@ -90,6 +90,11 @@ public class HealthTracker : MonoBehaviour
 
     public void decrementHearts()
     {
+        if (PlayerStatus.isInstakill)
+        {
+            health = 0;
+        }
+        
         if(!PlayerStatus.isInvincible)
         {
             if(shield > 0)
