@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
     {
         health--;
         
-        audioManager.PlaySFX(audioManager.Damage);
+        audioManager.PlaySFX(audioManager.Enemy);
     }
 
     void Awake()

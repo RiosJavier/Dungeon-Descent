@@ -4400,7 +4400,12 @@ MonoBehaviour:
   Coin: {fileID: 8300000, guid: 8b7e9e25100bf42d6a4ee0cc56dd3814, type: 3}
   Damage: {fileID: 8300000, guid: 5321d7e3e302c453b9809ddb667a1321, type: 3}
   HealthPotion: {fileID: 8300000, guid: 4f6aa671ac0c845099d56e07d1af98f2, type: 3}
-  future: {fileID: 0}
+  PermBuff: {fileID: 8300000, guid: a5284fcca39164317b2c81dcf5d9d225, type: 3}
+  Arrow: {fileID: 8300000, guid: ebe9f0e202dad4a57bca24e1dae7d95b, type: 3}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 8300000, guid: f70f72e66edc840a48fbe1364c88a424, type: 3}
+  Swing: {fileID: 8300000, guid: d9808a818e8ef49f2b1ddd801762d26b, type: 3}
+  Chest: {fileID: 8300000, guid: eb7e34d1f2ea646878ffdce553ed675a, type: 3}
 --- !u!4 &2144570662
 Transform:
   m_ObjectHideFlags: 0

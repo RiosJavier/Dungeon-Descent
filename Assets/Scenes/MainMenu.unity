@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 39140322}
   - component: {fileID: 39140321}
   - component: {fileID: 39140324}
+  - component: {fileID: 39140325}
   m_Layer: 5
   m_Name: BackButtonC
   m_TagString: Untagged
@@ -490,6 +491,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 39140325}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39140322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +553,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &39140325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39140319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &50762220
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +590,7 @@ GameObject:
   - component: {fileID: 50762224}
   - component: {fileID: 50762223}
   - component: {fileID: 50762222}
+  - component: {fileID: 50762226}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -661,6 +699,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 50762226}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &50762224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +749,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50762220}
   m_CullTransparentMesh: 1
+--- !u!114 &50762226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50762220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &60524928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1638,7 @@ GameObject:
   - component: {fileID: 181281517}
   - component: {fileID: 181281516}
   - component: {fileID: 181281519}
+  - component: {fileID: 181281520}
   m_Layer: 5
   m_Name: ControlsButton
   m_TagString: Untagged
@@ -1660,6 +1735,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 181281520}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &181281517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,6 +1797,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &181281520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181281514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &227401744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,7 +2436,12 @@ MonoBehaviour:
   Coin: {fileID: 8300000, guid: 8b7e9e25100bf42d6a4ee0cc56dd3814, type: 3}
   Damage: {fileID: 8300000, guid: 5321d7e3e302c453b9809ddb667a1321, type: 3}
   HealthPotion: {fileID: 8300000, guid: 4f6aa671ac0c845099d56e07d1af98f2, type: 3}
-  future: {fileID: 0}
+  PermBuff: {fileID: 8300000, guid: a5284fcca39164317b2c81dcf5d9d225, type: 3}
+  Arrow: {fileID: 8300000, guid: ebe9f0e202dad4a57bca24e1dae7d95b, type: 3}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!4 &379956650
 Transform:
   m_ObjectHideFlags: 0
@@ -2648,6 +2764,7 @@ GameObject:
   - component: {fileID: 436788495}
   - component: {fileID: 436788494}
   - component: {fileID: 436788493}
+  - component: {fileID: 436788497}
   m_Layer: 5
   m_Name: BackButtonS
   m_TagString: Untagged
@@ -2744,6 +2861,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 436788497}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &436788495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2782,6 +2911,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436788491}
   m_CullTransparentMesh: 1
+--- !u!114 &436788497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436788491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &508532576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,6 +3849,7 @@ GameObject:
   - component: {fileID: 882084215}
   - component: {fileID: 882084214}
   - component: {fileID: 882084217}
+  - component: {fileID: 882084218}
   m_Layer: 5
   m_Name: Volumebutton
   m_TagString: Untagged
@@ -3792,6 +3946,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 882084218}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &882084215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3842,6 +4008,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &882084218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882084212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &961739885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5235,6 +5425,7 @@ GameObject:
   - component: {fileID: 1255598757}
   - component: {fileID: 1255598756}
   - component: {fileID: 1255598755}
+  - component: {fileID: 1255598759}
   m_Layer: 5
   m_Name: BackButtonS
   m_TagString: Untagged
@@ -5331,6 +5522,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1255598759}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1255598757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5369,6 +5572,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255598753}
   m_CullTransparentMesh: 1
+--- !u!114 &1255598759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255598753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &1270361391
 GameObject:
   m_ObjectHideFlags: 0
@@ -5382,6 +5609,7 @@ GameObject:
   - component: {fileID: 1270361395}
   - component: {fileID: 1270361394}
   - component: {fileID: 1270361393}
+  - component: {fileID: 1270361397}
   m_Layer: 5
   m_Name: BackButtonS
   m_TagString: Untagged
@@ -5478,6 +5706,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1270361397}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1270361395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5516,6 +5756,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270361391}
   m_CullTransparentMesh: 1
+--- !u!114 &1270361397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270361391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &1277154480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5640,6 +5904,7 @@ GameObject:
   - component: {fileID: 1319727879}
   - component: {fileID: 1319727878}
   - component: {fileID: 1319727881}
+  - component: {fileID: 1319727882}
   m_Layer: 5
   m_Name: Settings Button
   m_TagString: Untagged
@@ -5736,6 +6001,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1319727882}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1319727879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5786,6 +6063,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1319727882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319727876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 0}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &1371451436
 GameObject:
   m_ObjectHideFlags: 0
@@ -7591,6 +7892,7 @@ GameObject:
   - component: {fileID: 2063064151}
   - component: {fileID: 2063064150}
   - component: {fileID: 2063064153}
+  - component: {fileID: 2063064154}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -7675,6 +7977,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063064154}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2063064151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7725,6 +8039,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f813cebc53bc48af9fb1e99977634b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2063064154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063064148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d6a7327c7c4c83bee4fc0f740aef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 961739886}
+  SFXSource: {fileID: 1681771642}
+  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  Coin: {fileID: 0}
+  Damage: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 8300000, guid: 3611c36c7b26d4e04943693979a8dac1, type: 3}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
+  Chest: {fileID: 0}
 --- !u!1 &2113702240
 GameObject:
   m_ObjectHideFlags: 0

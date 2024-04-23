@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public Collider2D rightHitbox;
     public Collider2D upHitbox;
     public Collider2D downHitbox;
+    AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
@@ -198,7 +199,7 @@ public class PlayerController : MonoBehaviour
             float directionY = animator.GetFloat("DirectionY");
 
             Direction facingDirection = GetFacingDirection(directionX, directionY);
-
+            audioManager.PlaySFX(audioManager.Swing);
             // Set the attack direction in the Animator
             int attackDirectionValue = 0;
 
@@ -243,6 +244,7 @@ public void ShootArrow()
         // Check if cooldown period has passed
     if (Time.time - lastArrowTime >= arrowCooldown)
     {
+        audioManager.PlaySFX(audioManager.Arrow);
 
     // Instantiate the arrow prefab at the spawn point
     GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, Quaternion.identity);
@@ -277,4 +279,7 @@ public void ShootArrow()
         Debug.Log("Cannot shoot yet, cooldown active.");
     }
 }
+    void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 }
