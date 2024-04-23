@@ -30,9 +30,11 @@ public class EnemyHealth : MonoBehaviour
 
     public void decrementHearts()
     {
-        health--;
-        
-        audioManager.PlaySFX(audioManager.Enemy);
+        if(!PlayerStatus.damageDebuff)
+        {
+            health--;
+            audioManager.PlaySFX(audioManager.Enemy);
+        }
     }
 
     void Awake()
@@ -52,18 +54,21 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Sword")
+        if (!PlayerStatus.damageDebuff)
         {
-            Debug.Log("Collision detected");
-            ScoreManager.instance.Addpoint();
-            decrementHearts();
-        }
-        if(collision.tag == "Arrow")
-        {
-            if (HealthTracker.instance != null)
-            {   
+            if(collision.tag == "Sword")
+            {
+                Debug.Log("Collision detected");
                 ScoreManager.instance.Addpoint();
                 decrementHearts();
+            }
+            if(collision.tag == "Arrow")
+            {
+                if (HealthTracker.instance != null)
+                {   
+                    ScoreManager.instance.Addpoint();
+                    decrementHearts();
+                }
             }
         }
     }
