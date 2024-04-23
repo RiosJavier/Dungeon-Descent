@@ -3933,6 +3933,7 @@ MonoBehaviour:
   Chest: {fileID: 8300000, guid: eb7e34d1f2ea646878ffdce553ed675a, type: 3}
   Lucky: {fileID: 8300000, guid: 4a2ad855654074e85b993b7267d01b5d, type: 3}
   Unlucky: {fileID: 8300000, guid: 59ecb3fd2dd1c4936a5ad88f18ae35b0, type: 3}
+  Pit: {fileID: 8300000, guid: 7b850dd85aa904feba148c7d692f983d, type: 3}
 --- !u!4 &2144570662
 Transform:
   m_ObjectHideFlags: 0

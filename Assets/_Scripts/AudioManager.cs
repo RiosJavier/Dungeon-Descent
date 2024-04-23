@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Chest;
     public AudioClip Lucky;
     public AudioClip Unlucky;
+    public AudioClip Pit;
 
     private void Start()
     {

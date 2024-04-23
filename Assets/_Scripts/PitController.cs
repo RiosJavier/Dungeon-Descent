@@ -6,6 +6,7 @@ public class PitController : MonoBehaviour
 {
     private bool playerJumpedOver = false;
     private Vector3 originalScale;
+    AudioManager audioManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,6 +32,7 @@ public class PitController : MonoBehaviour
                 }
                 else
                 {
+                    audioManager.PlaySFX(audioManager.Pit);
                     StartCoroutine(CheckPlayerJump(player));
                 }
             }
@@ -68,5 +70,8 @@ public class PitController : MonoBehaviour
         }
 
         player.transform.localScale = targetScale;
-    }       
+    } 
+    void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }      
 }
