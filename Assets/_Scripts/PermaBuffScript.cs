@@ -13,6 +13,7 @@ public class PermaHeartScript : MonoBehaviour
     public int price;
     public GameObject text;
     public permaBuffType type;
+    AudioManager audioManager;
     
 
     public void Start()
@@ -25,6 +26,7 @@ public class PermaHeartScript : MonoBehaviour
     {
         if(collision.tag == "Player" && price <= PlayerStatus.coinCount)
         {
+            audioManager.PlaySFX(audioManager.PermBuff);
             Destroy(gameObject);
             PlayerStatus.subtractCoins(price);
             switch (type)
@@ -47,5 +49,9 @@ public class PermaHeartScript : MonoBehaviour
     public void setText()
     {
         text.GetComponent<TextMeshProUGUI>().text = price.ToString();
+    }
+
+    void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 }

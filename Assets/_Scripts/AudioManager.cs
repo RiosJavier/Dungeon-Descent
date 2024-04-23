@@ -12,7 +12,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip Coin;
     public AudioClip Damage;
     public AudioClip HealthPotion;
-    public AudioClip future;
+    public AudioClip PermBuff;
+    public AudioClip Arrow;
+    public AudioClip UIClick;
+    public AudioClip Enemy;
+    public AudioClip Swing;
+    public AudioClip Chest;
+    public AudioClip Lucky;
+    public AudioClip Unlucky;
 
     private void Start()
     {

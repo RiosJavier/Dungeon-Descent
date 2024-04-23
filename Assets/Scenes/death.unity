@@ -1575,6 +1575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7003979223743080732, guid: 8a0ddc3895bcc441cac682b949772ffd, type: 3}
+      propertyPath: transitionTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2364,7 +2368,11 @@ MonoBehaviour:
   Coin: {fileID: 8300000, guid: 8b7e9e25100bf42d6a4ee0cc56dd3814, type: 3}
   Damage: {fileID: 8300000, guid: 5321d7e3e302c453b9809ddb667a1321, type: 3}
   HealthPotion: {fileID: 8300000, guid: 4f6aa671ac0c845099d56e07d1af98f2, type: 3}
-  future: {fileID: 0}
+  PermBuff: {fileID: 0}
+  Arrow: {fileID: 0}
+  UIClick: {fileID: 0}
+  Enemy: {fileID: 0}
+  Swing: {fileID: 0}
 --- !u!4 &1570838890
 Transform:
   m_ObjectHideFlags: 0

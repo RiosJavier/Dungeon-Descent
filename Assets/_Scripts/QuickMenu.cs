@@ -6,7 +6,7 @@ using System.Collections;
 public class QuickMenu : MonoBehaviour
 {
     public GameObject quickMenu; // Assign this to your Quick Menu canvas
-
+    AudioManager audioManager;
 
     private void Start()
     {
@@ -70,6 +70,7 @@ public class QuickMenu : MonoBehaviour
     public void BackToMainMenu()
     {
         // Load the main menu scene (replace "MainMenu" with your scene's name)
+        audioManager.PlaySFX(audioManager.UIClick);
         SceneManager.LoadScene("MainMenu");
         
         // Make sure to resume time scale in case it's paused
@@ -79,8 +80,12 @@ public class QuickMenu : MonoBehaviour
     public void ResumeGame()
     {
         // Deactivate the quick menu and resume the game
+        audioManager.PlaySFX(audioManager.UIClick);
         quickMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
+    void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     
 }

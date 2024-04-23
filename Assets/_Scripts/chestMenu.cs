@@ -23,7 +23,7 @@ public class chestMenu : MonoBehaviour
 
     private int luckPercent;
     private int coinsSpent;
-
+    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +41,7 @@ public class chestMenu : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Chest Menu Loaded!");
+            audioManager.PlaySFX(audioManager.Chest);
             setLuckiness();
             updatePercent();
             ToggleChestMenu();
@@ -66,7 +67,7 @@ public class chestMenu : MonoBehaviour
             coinsSpent++;
             luckPercent += 5;
         }
-
+        audioManager.PlaySFX(audioManager.UIClick);
         updatePercent();
     }
 
@@ -77,7 +78,7 @@ public class chestMenu : MonoBehaviour
             coinsSpent--;
             luckPercent -= 5;
         }
-
+        audioManager.PlaySFX(audioManager.UIClick);
         updatePercent();
     }
 
@@ -91,6 +92,7 @@ public class chestMenu : MonoBehaviour
 
     public void rollButtonPressed()
     {
+        audioManager.PlaySFX(audioManager.UIClick);
         int roll = Random.Range(0, 100);
 
         if (roll <= luckPercent) //rolled something good
@@ -111,7 +113,7 @@ public class chestMenu : MonoBehaviour
         Debug.Log("ROLL == " + roll);
         PlayerStatus.setItem((PlayerStatus.Item)roll);
         luckyItem.sprite = sprites[roll];
-
+        audioManager.PlaySFX(audioManager.Lucky);
         lucky.SetActive(true);
         chestUI.SetActive(false);
     }
@@ -121,7 +123,7 @@ public class chestMenu : MonoBehaviour
         int roll = Random.Range(PlayerStatus.NUMBER_OF_BUFFS + 1, PlayerStatus.NUMBER_OF_BUFFS + PlayerStatus.NUMBER_OF_DEBUFFS + 1);
 
         PlayerStatus.setItem((PlayerStatus.Item)roll);
-
+        audioManager.PlaySFX(audioManager.Unlucky);
         unlucky.SetActive(true);
         chestUI.SetActive(false);
     }
@@ -134,10 +136,14 @@ public class chestMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        audioManager.PlaySFX(audioManager.UIClick);
         chestUI.SetActive(false);
         lucky.SetActive(false);
         unlucky.SetActive(false);
         Time.timeScale = 1f;
         Destroy(gameObject);
+    }
+    void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 }
