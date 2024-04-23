@@ -577,6 +577,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &50762220
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +775,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &60524928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1825,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &227401744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2448,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!4 &379956650
 Transform:
   m_ObjectHideFlags: 0
@@ -2935,6 +2943,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &508532576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4032,6 +4042,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &961739885
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,7 +4266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &990100804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5596,6 +5608,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &1270361391
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +5794,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &1277154480
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,6 +6103,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &1371451436
 GameObject:
   m_ObjectHideFlags: 0
@@ -8063,6 +8081,8 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Swing: {fileID: 0}
   Chest: {fileID: 0}
+  Lucky: {fileID: 0}
+  Unlucky: {fileID: 0}
 --- !u!1 &2113702240
 GameObject:
   m_ObjectHideFlags: 0
