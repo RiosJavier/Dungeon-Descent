@@ -2094,7 +2094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 962114566}
   SFXSource: {fileID: 1063694060}
-  background: {fileID: 8300000, guid: 7b8c9f705855347f7affb1a29a7a4c3b, type: 3}
+  background: {fileID: 8300000, guid: 4f61d642139364d069a04410de197c45, type: 3}
   Coin: {fileID: 8300000, guid: 8b7e9e25100bf42d6a4ee0cc56dd3814, type: 3}
   Damage: {fileID: 8300000, guid: 5321d7e3e302c453b9809ddb667a1321, type: 3}
   HealthPotion: {fileID: 8300000, guid: 4f6aa671ac0c845099d56e07d1af98f2, type: 3}
