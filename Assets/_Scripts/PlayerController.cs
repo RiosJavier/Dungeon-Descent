@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour
     Animator animator; 
     public VisualEffect vfx;
 
+    public Collider2D leftHitbox;
+    public Collider2D rightHitbox;
+    public Collider2D upHitbox;
+    public Collider2D downHitbox;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +80,10 @@ public class PlayerController : MonoBehaviour
     {
         TriggerAttack();
     }
+    if (Input.GetMouseButtonDown(1)) // Right-click for attack
+    {
+        ShootArrow();
+    }
     }
 
     private void Move(Vector3 direction)
@@ -131,105 +140,141 @@ public class PlayerController : MonoBehaviour
         isJumping = false;
     }
 
-public enum Direction
-{
-    Left,
-    Right,
-    Up,
-    Down
-}
-
-public Direction GetFacingDirection(float directionX, float directionY)
-{
-    if (directionX < 0) return Direction.Left;
-    if (directionX > 0) return Direction.Right;
-    if (directionY < 0) return Direction.Down;
-    if (directionY > 0) return Direction.Up;
-
-    return Direction.Down; // Default or fallback direction
-}
-
-public Collider2D leftHitbox;
-public Collider2D rightHitbox;
-public Collider2D upHitbox;
-public Collider2D downHitbox;
-
-public void DisableAllHitboxes()
-{
-    leftHitbox.enabled = false;
-    rightHitbox.enabled = false;
-    upHitbox.enabled = false;
-    downHitbox.enabled = false;
-}
-
-public void EnableHitbox(Direction direction)
-{
-    DisableAllHitboxes(); // Ensure only one hitbox is enabled at a time
-
-    switch (direction)
+    public enum Direction
     {
-        case Direction.Left:
-            leftHitbox.enabled = true;
-            break;
-        case Direction.Right:
-            rightHitbox.enabled = true;
-            break;
-        case Direction.Up:
-            upHitbox.enabled = true;
-            break;
-        case Direction.Down:
-            downHitbox.enabled = true;
-            break;
+        Left,
+        Right,
+        Up,
+        Down
     }
-}
 
-
-public float hitboxDuration = 0.2f; // Duration to keep hitbox enabled (adjust as needed)
-
-public void TriggerAttack()
-{
-    if (animator != null)
+    public Direction GetFacingDirection(float directionX, float directionY)
     {
-        // Determine the direction the player is facing
-        float directionX = animator.GetFloat("DirectionX");
-        float directionY = animator.GetFloat("DirectionY");
+        if (directionX < 0) return Direction.Left;
+        if (directionX > 0) return Direction.Right;
+        if (directionY < 0) return Direction.Down;
+        if (directionY > 0) return Direction.Up;
 
-        Direction facingDirection = GetFacingDirection(directionX, directionY);
+        return Direction.Down; // Default or fallback direction
+    }
 
-        // Set the attack direction in the Animator
-        int attackDirectionValue = 0;
+    public void DisableAllHitboxes()
+    {
+        leftHitbox.enabled = false;
+        rightHitbox.enabled = false;
+        upHitbox.enabled = false;
+        downHitbox.enabled = false;
+    }
 
-        switch (facingDirection)
+    public void EnableHitbox(Direction direction)
+    {
+        DisableAllHitboxes(); // Ensure only one hitbox is enabled at a time
+
+        switch (direction)
         {
             case Direction.Left:
-                attackDirectionValue = 0;
+                leftHitbox.enabled = true;
                 break;
             case Direction.Right:
-                attackDirectionValue = 1;
+                rightHitbox.enabled = true;
                 break;
             case Direction.Up:
-                attackDirectionValue = 2;
+                upHitbox.enabled = true;
                 break;
             case Direction.Down:
-                attackDirectionValue = 3;
+                downHitbox.enabled = true;
                 break;
         }
+    }
 
-        animator.SetInteger("AttackDirection", attackDirectionValue); // Set direction
-        animator.SetTrigger("Attack"); // Trigger the attack animation
+    public float hitboxDuration = 0.2f; // Duration to keep hitbox enabled (adjust as needed)
 
-        // Enable hitbox and start coroutine to disable after duration
-        EnableHitbox(facingDirection);
-        StartCoroutine(DisableHitboxAfterDelay(0.2f)); // Adjust duration as needed
+    public void TriggerAttack()
+    {
+        if (animator != null)
+        {
+            // Determine the direction the player is facing
+            float directionX = animator.GetFloat("DirectionX");
+            float directionY = animator.GetFloat("DirectionY");
+
+            Direction facingDirection = GetFacingDirection(directionX, directionY);
+
+            // Set the attack direction in the Animator
+            int attackDirectionValue = 0;
+
+            switch (facingDirection)
+            {
+                case Direction.Left:
+                    attackDirectionValue = 0;
+                    break;
+                case Direction.Right:
+                    attackDirectionValue = 1;
+                    break;
+                case Direction.Up:
+                    attackDirectionValue = 2;
+                    break;
+                case Direction.Down:
+                    attackDirectionValue = 3;
+                    break;
+            }
+
+            animator.SetInteger("AttackDirection", attackDirectionValue); // Set direction
+            animator.SetTrigger("Attack"); // Trigger the attack animation
+
+            // Enable hitbox and start coroutine to disable after duration
+            EnableHitbox(facingDirection);
+            StartCoroutine(DisableHitboxAfterDelay(0.2f)); // Adjust duration as needed
+        }
+    }
+
+    public IEnumerator DisableHitboxAfterDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration); // Wait for the specified duration
+        DisableAllHitboxes(); // Disable all hitboxes
+    }
+
+public GameObject arrowPrefab; // Reference to the arrow prefab
+public Transform arrowSpawnPoint; // Point from where the arrow will be spawned
+public float arrowCooldown = 1.0f; // Set cooldown period in seconds
+private float lastArrowTime = 0f;  // Time when the last arrow was shot
+
+public void ShootArrow()
+{
+        // Check if cooldown period has passed
+    if (Time.time - lastArrowTime >= arrowCooldown)
+    {
+
+    // Instantiate the arrow prefab at the spawn point
+    GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, Quaternion.identity);
+
+    // Get the direction the player is facing
+    float directionX = animator.GetFloat("DirectionX");
+    float directionY = animator.GetFloat("DirectionY");
+    Direction facingDirection = GetFacingDirection(directionX, directionY);
+
+    // Adjust direction based on correct facing orientation
+    switch (facingDirection)
+    {
+        case Direction.Left:
+            arrow.GetComponent<ProjectileBehavior_Player>().SetDirection(Vector2.right); // Corrected direction
+            break;
+        case Direction.Right:
+            arrow.GetComponent<ProjectileBehavior_Player>().SetDirection(Vector2.left); // Corrected direction
+            break;
+        case Direction.Up:
+            arrow.GetComponent<ProjectileBehavior_Player>().SetDirection(Vector2.down); // Corrected direction
+            break;
+        case Direction.Down:
+            arrow.GetComponent<ProjectileBehavior_Player>().SetDirection(Vector2.up); // Corrected direction
+            break;
+    }
+            // Update the last arrow time to the current time
+        lastArrowTime = Time.time;
+    }
+    else
+    {
+        // Feedback or log message indicating cooldown is active
+        Debug.Log("Cannot shoot yet, cooldown active.");
     }
 }
-
-
-public IEnumerator DisableHitboxAfterDelay(float duration)
-{
-    yield return new WaitForSeconds(duration); // Wait for the specified duration
-    DisableAllHitboxes(); // Disable all hitboxes
-}
-
-
 }

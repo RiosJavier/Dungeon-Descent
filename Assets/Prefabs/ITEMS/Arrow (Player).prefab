@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5136180337751273922}
   - component: {fileID: 3701863980540239353}
   - component: {fileID: 4531788535009697826}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Arrow (Player)
-  m_TagString: Coin
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

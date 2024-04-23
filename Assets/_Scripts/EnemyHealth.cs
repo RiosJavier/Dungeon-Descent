@@ -57,5 +57,12 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("Collision detected");
             decrementHearts();
         }
+        if(collision.tag == "Arrow")
+        {
+            if (HealthTracker.instance != null)
+            {
+                decrementHearts();
+            }
+        }
     }
 }
