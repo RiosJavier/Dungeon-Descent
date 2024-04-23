@@ -14,11 +14,11 @@ public class PlayerStatus : MonoBehaviour
         
         ROPE, COIN_MULT, INVINCIBLE, SHIELD, //BUFFS
         
-        INSTAKILL, NO_DAMAGE, LIMITED_SIGHT, INV_CONTROLS //DEBUFFS
+        INSTAKILL, NO_DAMAGE, INV_CONTROLS //DEBUFFS
     }
 
     public static int NUMBER_OF_BUFFS = 4;
-    public static int NUMBER_OF_DEBUFFS = 4;
+    public static int NUMBER_OF_DEBUFFS = 3;
 
     //the transform of the player
     //public Transform playerTransform;
@@ -34,7 +34,7 @@ public class PlayerStatus : MonoBehaviour
 
     //Debuffs
     public static bool isInstakill;
-    public int damageDebuff;
+    public static bool damageDebuff;
     public static bool isLimitedSight;
     public static bool isInverted;
 
@@ -59,7 +59,7 @@ public class PlayerStatus : MonoBehaviour
         PERMANENT_COIN_MULTIPLIER = 1;
         PERMANENT_HEALTH_BOOST = 0; //BECAUSE NO HEARTS
 
-        damageDebuff = 0;
+        damageDebuff = false;
 
         roomNumItemGrabbed = -1;
         
@@ -121,11 +121,7 @@ public class PlayerStatus : MonoBehaviour
                     break;
                 case Item.NO_DAMAGE:
                     //no damage logic
-
-                    break;
-                case Item.LIMITED_SIGHT:
-                    //limited sight logic
-                    removeLimitedSight();
+                    removeDamageDebuff();
                     break;
                 case Item.INV_CONTROLS:
                     //inverted controls logic
@@ -156,9 +152,7 @@ public class PlayerStatus : MonoBehaviour
             case Item.INSTAKILL:
                 addInstaKill(); break;
             case Item.NO_DAMAGE:
-                break;
-            case Item.LIMITED_SIGHT:
-                addLimitedSight(); break;
+                addDamageDebuff(); break;
             case Item.INV_CONTROLS:
                 addInvertedControls(); break;
         }
@@ -241,7 +235,9 @@ public class PlayerStatus : MonoBehaviour
     public static void addShield()
     {   
         //Add shield logic
-        roomNumItemGrabbed = LoaderBorder.roomCount;   
+        HealthTracker.shield++;
+        setItem(Item.NONE);
+        //roomNumItemGrabbed = LoaderBorder.roomCount;   
     }
 
     public void updateCoin()
@@ -249,4 +245,16 @@ public class PlayerStatus : MonoBehaviour
         //Debug.Log("Coins: " + coinCount.ToString());
         coinText.text = "COINS: " + coinCount.ToString();
     }
-}
+
+    public static void addDamageDebuff()
+    {
+        damageDebuff = true;
+        roomNumItemGrabbed = LoaderBorder.roomCount;
+    }
+
+    public static void removeDamageDebuff()
+    {
+        damageDebuff = false;
+        setItem(Item.NONE);
+    }
+}   
