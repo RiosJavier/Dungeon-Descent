@@ -55,12 +55,14 @@ public class EnemyHealth : MonoBehaviour
         if(collision.tag == "Sword")
         {
             Debug.Log("Collision detected");
+            ScoreManager.instance.Addpoint();
             decrementHearts();
         }
         if(collision.tag == "Arrow")
         {
             if (HealthTracker.instance != null)
-            {
+            {   
+                ScoreManager.instance.Addpoint();
                 decrementHearts();
             }
         }
