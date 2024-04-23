@@ -162,13 +162,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 21300000, guid: 11358e37d1383f744900cc10dc321535, type: 3}
   - {fileID: 1606491681, guid: 608c1bd2602b44969b2d4ca2c9f77e22, type: 3}
-  - {fileID: 0}
   - {fileID: 21300000, guid: b54f6ffe94b8e324083330a2efb40f18, type: 3}
   - {fileID: 21300000, guid: 7a2c01fd8e000f740ae256c501e1b3d1, type: 3}
-  - {fileID: 1666555255, guid: 8c5d8d9a43c234a3bb242020f8211eff, type: 3}
-  - {fileID: -1574556574, guid: 21995e41dd3984fd0b5bd0b2fcd1bbed, type: 3}
-  - {fileID: -1798736801, guid: d801812635d3841f7a48039bc27133c7, type: 3}
-  - {fileID: 1832350418, guid: 406e7d47de17848de98278aae519cd61, type: 3}
+  - {fileID: 21300000, guid: 8c5d8d9a43c234a3bb242020f8211eff, type: 3}
+  - {fileID: 21300000, guid: 21995e41dd3984fd0b5bd0b2fcd1bbed, type: 3}
+  - {fileID: 21300000, guid: d801812635d3841f7a48039bc27133c7, type: 3}
+  - {fileID: 21300000, guid: 406e7d47de17848de98278aae519cd61, type: 3}
   chestUI: {fileID: 2126003136642934245}
   lucky: {fileID: 5612004600184791169}
   unlucky: {fileID: 3472784374592323666}
@@ -319,6 +318,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4966425934837713907}
     m_Modifications:
+    - target: {fileID: 900016238253299512, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
+      propertyPath: m_margin.z
+      value: -62.6696
+      objectReference: {fileID: 0}
     - target: {fileID: 3477478532962998935, guid: 4f7139f62c0f59e4ba49a7beaf20362d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

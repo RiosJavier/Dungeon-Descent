@@ -121,8 +121,9 @@ public class chestMenu : MonoBehaviour
     private void pickBadBuff()
     {
         int roll = Random.Range(PlayerStatus.NUMBER_OF_BUFFS + 1, PlayerStatus.NUMBER_OF_BUFFS + PlayerStatus.NUMBER_OF_DEBUFFS + 1);
-
+        Debug.Log("ROLL == " + roll);
         PlayerStatus.setItem((PlayerStatus.Item)roll);
+        unluckyItem.sprite = sprites[roll];
         audioManager.PlaySFX(audioManager.Unlucky);
         unlucky.SetActive(true);
         chestUI.SetActive(false);

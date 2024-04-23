@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 3366346175963128195}
   - component: {fileID: 3497692558848869751}
   m_Layer: 5
-  m_Name: NewItemImage
+  m_Name: LuckyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

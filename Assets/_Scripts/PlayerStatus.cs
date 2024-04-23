@@ -12,12 +12,12 @@ public class PlayerStatus : MonoBehaviour
     {
         NONE, 
         
-        ROPE, COIN_MULT, DAMAGE_MULT, INVINCIBLE, SHIELD, //BUFFS
+        ROPE, COIN_MULT, INVINCIBLE, SHIELD, //BUFFS
         
         INSTAKILL, NO_DAMAGE, LIMITED_SIGHT, INV_CONTROLS //DEBUFFS
     }
 
-    public static int NUMBER_OF_BUFFS = 5;
+    public static int NUMBER_OF_BUFFS = 4;
     public static int NUMBER_OF_DEBUFFS = 4;
 
     //the transform of the player
@@ -100,9 +100,6 @@ public class PlayerStatus : MonoBehaviour
                 case Item.COIN_MULT:
                     //coin logic
                     removeCoinMultiplier();
-                    break;
-                case Item.DAMAGE_MULT:
-                    //damage logic
                     break;
                 case Item.INVINCIBLE:
                     removeInvincible(); break;
