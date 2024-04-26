@@ -239,6 +239,21 @@ Add obstacles and enemies to the game to make it playable and interesting.
 	2. Daniel: 
 	3. Paloma:
 	4. Javier:
+		- Jira Task: Create 10 rooms
+			- [Scrum-164](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-164),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/35)
+		- Jira Task: UI for chests
+			- [Scrum-190](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-190),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/37)
+		- Jira Task: Transition effects between different UI scenes
+			- [Scrum-188](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-188),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/40)
+		- Jira Task: Animations for UI elements in main menu
+			- [Scrum-194](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-194),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/61)
+		- Jira Task: Add more music and sfx to the game.
+			- [Scrum-191](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-191),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/69)
 	5. Noe: 
 		- Jira Task: Add a chest that the player can interact with.
 			- [Scrum-192](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-192)
