@@ -238,6 +238,24 @@ Add obstacles and enemies to the game to make it playable and interesting.
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-182-Shoot-Arrows)
 	2. Daniel: 
 	3. Paloma:
+		- Jira Task: Create 10 rooms
+			- [Scrum-163](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-163),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/36)
+		- Jira Task: Add an inverted controls debuff
+			- [Scrum-175](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-175),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/45)
+		- Jira Task: Add coin multiplier temp powerup
+			- [Scrum-171](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-171),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/46)
+		- Jira Task: Add a limited visibility debuff
+			- [Scrum-174](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-174),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/60)
+		- Jira Task: Add chests to the rooms
+			- [Scrum-118](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-118)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/63)
+		- Jira Task: Add a temporary one shot kill
+			- [Scrum-176](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-176)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/64)
 	4. Javier:
 		- Jira Task: Create 10 rooms
 			- [Scrum-164](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-164),
