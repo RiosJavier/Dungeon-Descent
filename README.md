@@ -217,6 +217,43 @@ Add obstacles and enemies to the game to make it playable and interesting.
 	- Most importantly, we will do tests and fix bugs on the game
 	- Lastly, if we have time, we will add extra features like increasing difficulty and character customization
 ---
+
+## Features
+* ### Third Sprint
+<img src="" alt="Sprint 1" width="20%" height="20%">
+---
+* ### Contributions 
+	1. Mateo:
+		- Jira Task: Create 10 rooms
+			- [Scrum-166](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-166?atlOrigin=eyJpIjoiOTZjNWNiMmY2ZDlkNDJkODgxMzA4YmZkNDZkNzk4OGQiLCJwIjoiaiJ9),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-166-create-10-rooms)
+		- Jira Task: create a sword animation
+			- [Scrum-181]()https://cs3398s24betazoids.atlassian.net/browse/SCRUM-181?atlOrigin=eyJpIjoiYmU2NGMxN2Q5NmM4NDk5NDk5NmNjNWQxNDRmOTExNjciLCJwIjoiaiJ9,
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-181-create-a-sword-animation)
+		- Jira Task: add a sword that deals damage
+			- [Scrum-180](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-180?atlOrigin=eyJpIjoiMzZhNDAzYmI4ODg1NDNkYjk4NjlkNzcwZDM4Njc5ZGMiLCJwIjoiaiJ9),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-180-add-a-sword-that-deals-damage)
+		- Jira Task: make it possible for the player to shoot a bow
+			- [Scrum-182](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-182?atlOrigin=eyJpIjoiZWZlYzE3NzNjMjRlNDgwOTkxM2MzN2RiOGJmNzMwNjAiLCJwIjoiaiJ9),
+    		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-182-Shoot-Arrows)
+	2. Daniel: 
+		- Jira Task: 
+			- [Scrum-000](),
+    		[Bitbucket]()
+	3. Paloma:
+		- Jira Task: 
+			- [Scrum-000](),
+    		[Bitbucket]()
+	4. Javier:
+		- Jira Task: 
+			- [Scrum-000](),
+    		[Bitbucket]()
+	5. Noe: 
+		- Jira Task: 
+			- [Scrum-000](),
+    		[Bitbucket]()
+---
+
 ## Contacts
 - [Mateo Cordeiro](www.linkedin.com/in/mateo-cordeiro-bb3a41b7) - mpc89@txstate.edu
 - [Daniel Hamndan]() - orw17@txstate.edu
