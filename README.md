@@ -228,7 +228,7 @@ Add obstacles and enemies to the game to make it playable and interesting.
 			- [Scrum-166](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-166?atlOrigin=eyJpIjoiOTZjNWNiMmY2ZDlkNDJkODgxMzA4YmZkNDZkNzk4OGQiLCJwIjoiaiJ9),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-166-create-10-rooms)
 		- Jira Task: create a sword animation
-			- [Scrum-181]()https://cs3398s24betazoids.atlassian.net/browse/SCRUM-181?atlOrigin=eyJpIjoiYmU2NGMxN2Q5NmM4NDk5NDk5NmNjNWQxNDRmOTExNjciLCJwIjoiaiJ9,
+			- [Scrum-181](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-181?atlOrigin=eyJpIjoiYmU2NGMxN2Q5NmM4NDk5NDk5NmNjNWQxNDRmOTExNjciLCJwIjoiaiJ9),
     		[Bitbucket](https://bitbucket.org/cs3398s24betazoids/%7B46ca96fa-e22e-49a3-aefa-c98a00f3dadc%7D/branch/SCRUM-181-create-a-sword-animation)
 		- Jira Task: add a sword that deals damage
 			- [Scrum-180](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-180?atlOrigin=eyJpIjoiMzZhNDAzYmI4ODg1NDNkYjk4NjlkNzcwZDM4Njc5ZGMiLCJwIjoiaiJ9),
@@ -239,6 +239,21 @@ Add obstacles and enemies to the game to make it playable and interesting.
 	2. Daniel: 
 	3. Paloma:
 	4. Javier:
+		- Jira Task: Create 10 rooms
+			- [Scrum-164](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-164),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/35)
+		- Jira Task: UI for chests
+			- [Scrum-190](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-190),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/37)
+		- Jira Task: Transition effects between different UI scenes
+			- [Scrum-188](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-188),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/40)
+		- Jira Task: Animations for UI elements in main menu
+			- [Scrum-194](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-194),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/61)
+		- Jira Task: Add more music and sfx to the game.
+			- [Scrum-191](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-191),
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/69)
 	5. Noe: 
 		- Jira Task: Add a chest that the player can interact with.
 			- [Scrum-192](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-192)
