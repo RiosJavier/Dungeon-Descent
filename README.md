@@ -240,30 +240,36 @@ Add obstacles and enemies to the game to make it playable and interesting.
 	3. Paloma:
 	4. Javier:
 	5. Noe: 
-		- Jira Task: Deleting objects that go off screen
-			- [Scrum-136](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-136)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/27)
-		- Jira Task: Test that no "impossible" paths get created.
-			- [Scrum-137](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-137)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/28)
-		- Jira Task: Kill the player when they go off screen.
-			- [Scrum-138](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-138)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/26)
-		- Jira Task: When a player's health is zero, add event to end the game.
-			- [Scrum-142](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-142)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/13)
-		- Jira Task: Have the camera move on its own based on a timer.
-			- [Scrum-135](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-135)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/24)
-		- Jira Task: Design UI for Health System
-			- [Scrum-140](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-140)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/commits/2bed30cda5eb3ef06badffa661f3b2a9a0b7fdb4)
-		- Jira Task: Add health when a player collides with an item that gives health.
-			- [Scrum-143](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-143)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/11)
-		- Jira Task: Subtract health when come into contact with enemies + obstacles
-			- [Scrum-141](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-141)
-			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/12)
+		- Jira Task: Add a chest that the player can interact with.
+			- [Scrum-192](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-192)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/43)
+		- Jira Task: Create ten rooms.
+			- [Scrum-165](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-165)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/38)
+		- Jira Task: Create a rope item that can save the player from a pit once.
+			- [Scrum-185](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-185)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/44)
+		- Jira Task: Add invincibility powerup.
+			- [Scrum-170](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-170)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/50)
+		- Jira Task: Chest interaction pauses game and displays UI with options.
+			- [Scrum-193](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-193)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/49)
+		- Jira Task: Stop camera to provide safe room.
+			- [Scrum-179](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-179)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/58)
+		- Jira Task: Create a permanent heart +1 powerup.
+			- [Scrum-184](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-184)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/55)
+		- Jira Task: Create a coin multiplier permanent powerup.
+			- [Scrum-183](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-183)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/56)
+		- Jira Task: create a UI for shopkeeper.
+			- [Scrum-189](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-189)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/53)
+		- Jira Task: Add shield powerups
+			- [Scrum-172](https://cs3398s24betazoids.atlassian.net/browse/SCRUM-172)
+			[Bitbucket](https://bitbucket.org/cs3398s24betazoids/endlessrunner/pull-requests/52)
 * ### Next Steps:
 	- Adding power ups into the game that can assist the player
 	- Adding different enemies into the game
